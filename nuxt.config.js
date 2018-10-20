@@ -34,7 +34,25 @@ module.exports = {
   /*
   ** Nuxt.js modules
   */
-  modules: [],
+  modules: [
+    [
+      "nuxt-i18n",
+      {
+        locales: [
+          {
+            code: "th",
+            iso: "th-TH"
+          },
+          {
+            code: "en",
+            iso: "en-US"
+          }
+        ],
+        defaultLocale: "th",
+        vueI18nLoader: true
+      }
+    ]
+  ],
 
   /*
   ** Build configuration

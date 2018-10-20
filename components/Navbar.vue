@@ -9,55 +9,76 @@
       <div class="child-navbar">
         <ul v-if="!ifmobile" class="super-menu" v-scroll="handleScrollsupermenu">
           <a href="#" v-scroll-to="'#section-1'">
-            <li>หน้าหลัก</li>
+            <li>{{ $t('menu_home') }}</li>
           </a>
           <a href="#" class="sub-menu">
-            <li>โซลูชั่น <img v-scroll="handleScrolltri" src="~/assets/ICON/bx-play.svg" class="img-sub-menu"></li>
+            <li>{{ $t('menu_solution') }} <img v-scroll="handleScrolltri" src="~/assets/ICON/bx-play.svg" class="img-sub-menu"></li>
             <div class="animated bounceIn content-list">
-              <a>certification</a>
-              <a>digital signing</a>
+              <a>{{ $t('submenu_solution_cer') }}</a>
+              <a>{{ $t('submenu_solution_sign') }}</a>
             </div>
           </a>
           <a href="#" v-scroll-to="'#'">
-            <li>เอกสารเผยแพร่</li>
+            <li>{{ $t('menu_doucument') }} </li>
           </a>
           <a href="#" v-scroll-to="'#section-3'">
-            <li>ติดต่อเรา</li>
+            <li>{{ $t('menu_contact') }}</li>
           </a>
           <a href="#" class="lang-flag-switch" v-scroll-to="'#section-3'">
-            <img class="th-switch" src="../assets/ICON/thailand.svg">
-            <img class="th-switch" src="../assets/ICON/united-kingdom.svg">
+            <img class="th-switch" src="../assets/ICON/thailand.svg" @click="changeLang('th')">
+            <img class="th-switch" src="../assets/ICON/united-kingdom.svg" @click="changeLang('en')">
           </a>
         </ul>
         <ul v-else-if="clicked === true" class="super-menu-mobile" v-scroll="handleScrollsupermenu">
           <a class="animated fadeIn" style="display:block" href="#" v-scroll-to="'#section-1'">
-            <li>หน้าหลัก</li>
+            <li>{{ $t('menu_home') }}</li>
           </a>
           <a class="animated fadeIn" style="display:block" href="#" v-scroll-to="'#section-2'">
-            <li @click="collapseSubmenu">โซลูชั่น </li>
+            <li @click="collapseSubmenu">{{ $t('menu_solution') }}</li>
             <div v-show="clicked_submenu" class="animated fadeIn content-list-mobile">
-              <a href="">certification</a>
-              <a href="">digital signing</a>
+              <a href="">{{ $t('submenu_solution_cer') }}</a>
+              <a href="">{{ $t('submenu_solution_sign') }}</a>
             </div>
           </a>
-           <a class="animated fadeIn" style="display:block" href="#">
-            <li>เอกสารเผยแพร่</li>
+          <a class="animated fadeIn" style="display:block" href="#">
+            <li>{{ $t('menu_doucument') }}</li>
           </a>
-          <a class="animated fadeIn" style="display:block" href="#" >
-            <li>ติดต่อเรา</li>
+          <a class="animated fadeIn" style="display:block" href="#">
+            <li>{{ $t('menu_contact') }}</li>
           </a>
         </ul>
       </div>
     </div>
     <div v-scroll="handleHamberger" class="burger-position">
       <button v-if="ifmobile" v-bind:class="[ this.clicked ? hambergerActive : hambergerDefault]" @click="collapseBurger()" type="button">
-                <span class="hamburger-box">
-                  <span class="hamburger-inner"></span>
-                </span>
-              </button>
+                  <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                  </span>
+                </button>
     </div>
   </div>
 </template>
+
+<i18n>
+  {
+  "th": {
+    "menu_home": "หน้าหลัก",
+    "menu_solution": "โซลูชั่น",
+    "submenu_solution_cer": "บริการออกใบรับรอง",
+    "submenu_solution_sign": "ลายเซ็นอิเล็กทรอนิกส์",
+    "menu_doucument": "เอกสารเผยแพร่",
+    "menu_contact": "ติดต่อเรา"
+  },
+  "en": {
+    "menu_home": "Home",
+    "menu_solution": "Solution",
+     "submenu_solution_cer": "CERTIFICATION",
+    "submenu_solution_sign": "DIGITAL SIGNING",
+    "menu_doucument": "Document",
+    "menu_contact": "Contact"
+  }
+}
+</i18n>
 
 <script>
 import Vue from "vue";
@@ -100,6 +121,11 @@ export default {
     };
   },
   methods: {
+    changeLang: function(val) {
+      console.log(val);
+      this.$i18n.locale = val;
+    },
+
     handleScrollnavbar: function(evt, el) {
       if (window.scrollY > 50 && !this.clicked) {
         //console.log(this.clicked);
@@ -134,7 +160,7 @@ export default {
       this.window.width = window.innerWidth;
       this.window.height = window.innerHeight;
 
-      if (this.window.width <= 782) {
+      if (this.window.width <= 880) {
         this.ifmobile = true;
       } else this.ifmobile = false;
     },
@@ -377,13 +403,12 @@ ul {
   width: 25px;
 }
 
-@media screen and (max-width: 782px) {
+@media screen and (max-width: 880px) {
   .logo-text[data-v-cfc91daa] {
     font-size: 1.5em;
     color: rgb(0, 0, 0);
     transition: all 0.6s ease-in;
   }
-
   .super-menu {
     background: #d60103;
     position: absolute;
