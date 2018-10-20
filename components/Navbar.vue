@@ -19,10 +19,14 @@
             </div>
           </a>
           <a href="#" v-scroll-to="'#'">
-            <li>ดาว์นโหลด</li>
+            <li>เอกสารเผยแพร่</li>
           </a>
           <a href="#" v-scroll-to="'#section-3'">
             <li>ติดต่อเรา</li>
+          </a>
+          <a href="#" class="lang-flag-switch" v-scroll-to="'#section-3'">
+            <img class="th-switch" src="../assets/ICON/thailand.svg">
+            <img class="th-switch" src="../assets/ICON/united-kingdom.svg">
           </a>
         </ul>
         <ul v-else-if="clicked === true" class="super-menu-mobile" v-scroll="handleScrollsupermenu">
@@ -36,7 +40,10 @@
               <a href="">digital signing</a>
             </div>
           </a>
-          <a class="animated fadeIn" style="display:block" href="#" v-scroll-to="'#section-3'">
+           <a class="animated fadeIn" style="display:block" href="#">
+            <li>เอกสารเผยแพร่</li>
+          </a>
+          <a class="animated fadeIn" style="display:block" href="#" >
             <li>ติดต่อเรา</li>
           </a>
         </ul>
@@ -221,7 +228,7 @@ a {
 
 .super-menu > a > li {
   display: inline-block;
-  width: 100px;
+  min-width: 100px;
   text-align: center;
   line-height: 45px;
   color: #fff;
@@ -233,7 +240,7 @@ a {
 
 .super-menu > a > li:hover {
   display: inline-block;
-  width: 100px;
+  min-width: 100px;
   text-align: center;
   line-height: 45px;
   color: #fefefe9c;
@@ -246,7 +253,7 @@ a {
 
 .super-menu-scroll > a > li {
   display: inline-block;
-  width: 100px;
+  min-width: 100px;
   text-align: center;
   line-height: 45px;
   color: rgb(0, 0, 0);
@@ -258,7 +265,7 @@ a {
 
 .super-menu-scroll > a > li:hover {
   display: inline-block;
-  width: 100px;
+  min-width: 100px;
   text-align: center;
   line-height: 45px;
   color: #ee2524;
@@ -360,6 +367,14 @@ ul {
 
 .sub-menu:hover img {
   filter: none;
+}
+
+.lang-flag-switch {
+  vertical-align: text-top;
+}
+
+.th-switch {
+  width: 25px;
 }
 
 @media screen and (max-width: 782px) {
