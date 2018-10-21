@@ -1,8 +1,7 @@
 <template>
   <div>
     <Navbar></Navbar>
-    <SectionHome></SectionHome>
-    <Footer></Footer>
+    <SectionAbout></SectionAbout>
   </div>
 </template>
 
@@ -10,17 +9,13 @@
 import Vue from "vue";
 import Navbar from "~/components/Navbar.vue";
 import Footer from "~/components/Footer.vue";
-import SectionHome from "~/components/section/SectionHome.vue";
-import Vuetify from "vuetify";
-
-Vue.use(Vuetify);
+import SectionAbout from "~/components/section/SectionAbout.vue";
 
 export default {
-  name: "InitLayout",
+  name: "AboutLayout",
   components: {
     Navbar,
-    Footer,
-    SectionHome
+    SectionAbout
   }
 };
 </script>
@@ -31,7 +26,7 @@ body {
   padding: 0;
   margin: 0;
   width: 100%;
-  background: #ffffff;
+  background: linear-gradient(to top, #ffffff, #35b1ff, #008ce8);
   font-family: "Prompt", sans-serif;
 }
 </style>

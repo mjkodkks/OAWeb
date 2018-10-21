@@ -51,6 +51,9 @@ module.exports = {
         defaultLocale: "th",
         vueI18nLoader: true
       }
+    ],
+    [
+      'bootstrap-vue/nuxt'
     ]
   ],
 

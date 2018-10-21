@@ -8,9 +8,9 @@
       </div>
       <div class="child-navbar">
         <ul v-if="!ifmobile" class="super-menu" v-scroll="handleScrollsupermenu">
-          <a href="#" v-scroll-to="'#section-1'">
-            <li>{{ $t('menu_home') }}</li>
-          </a>
+          <nuxt-link to="/">
+          <li>{{ $t('menu_home') }}</li>
+          </nuxt-link>
           <a href="#" class="sub-menu">
             <li>{{ $t('menu_solution') }} <img v-scroll="handleScrolltri" src="~/assets/ICON/bx-play.svg" class="img-sub-menu"></li>
             <div class="animated bounceIn content-list">
@@ -18,15 +18,14 @@
               <a>{{ $t('submenu_solution_sign') }}</a>
             </div>
           </a>
-          <a href="#" v-scroll-to="'#'">
+          <nuxt-link to="/document">
             <li>{{ $t('menu_doucument') }} </li>
-          </a>
-          <a href="#" v-scroll-to="'#section-3'">
+          </nuxt-link>
+          <nuxt-link to="/about">
             <li>{{ $t('menu_contact') }}</li>
-          </a>
-          <a href="#" class="lang-flag-switch" v-scroll-to="'#section-3'">
-            <img class="th-switch" src="../assets/ICON/thailand.svg" @click="changeLang('th')">
-            <img class="th-switch" src="../assets/ICON/united-kingdom.svg" @click="changeLang('en')">
+          </nuxt-link>
+          <a href="#" class="lang-flag-switch">
+            <img class="th-switch" src="../assets/ICON/thailand.svg" @click="changeLang('th')">&nbsp;<img class="th-switch" src="../assets/ICON/united-kingdom.svg" @click="changeLang('en')">
           </a>
         </ul>
         <ul v-else-if="clicked === true" class="super-menu-mobile" v-scroll="handleScrollsupermenu">
@@ -123,7 +122,11 @@ export default {
   methods: {
     changeLang: function(val) {
       console.log(val);
+      this.$store.state.localLang = val;
       this.$i18n.locale = val;
+      this.$i18n.set = val;
+      this.$store.commit("setNewLocal", val);
+      console.log(this.$store.state.localLang);
     },
 
     handleScrollnavbar: function(evt, el) {
@@ -242,7 +245,7 @@ a {
 }
 
 .logo-text-scroll {
-  color: #000;
+  color: #007bff;
   font-size: 1.5em;
   width: 280px;
   transition: font-size 0.5s ease-in;

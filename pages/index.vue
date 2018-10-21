@@ -4,6 +4,7 @@
 
 <script>
 import InitLayout from "~/layouts/InitLayout.vue";
+import CreateStore from "~/store/index.js";
 
 export default {
   components: {
@@ -13,14 +14,6 @@ export default {
 </script>
 
 <style>
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
 .title {
   font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;

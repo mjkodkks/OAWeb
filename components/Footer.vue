@@ -1,41 +1,59 @@
 <template>
   <div class="footer">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12">
-          <div class="row">
-            <div class="col-3 col-md-2 text-right">
-              Address :
-            </div>
-            <div class="col-md-10 col-9">
-              บริษัท วัน ออเทน จำกัด ทะเบียนนิติบุคคลเลขที่ : 0105561069151 ที่อยู่ : 1768 อาคารไทยซัมมิท ทาวเวอร์ ชั้น 16 ถ.เพชรบุรีตัดใหม่ แขวงบางกะปิ เขตห้วยขวาง กรุงเทพมหานคร 10310
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-3 col-md-2 text-right">
-              Tel :
-            </div>
-            <div class="col-8">
-              02-257-7269
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-3 col-md-2 text-right">
-              E-mail :
-            </div>
-            <div class="col-9">
-              info@oneauthen.in.th
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+      <b-container class="bv-example-row">
+       <b-row align-h="center">
+           <b-col  cols="12">
+               <b-row> 
+                 <b-col cols="3" md="2" >
+                    {{ $t('Address') }} :
+                 </b-col>
+                 <b-col cols="9" md="10" >
+                     {{ $t('Address_body') }} 
+                 </b-col>
+                </b-row>
+                 <b-row> 
+                 <b-col cols="3" md="2" >
+                    {{ $t('Tel') }} :
+                 </b-col>
+                 <b-col cols="8" >
+                   02-257-7269
+                 </b-col>
+                </b-row>
+                 <b-row> 
+                 <b-col cols="3" md="2" >
+                    {{ $t('E-mail') }} :
+                 </b-col>
+                 <b-col cols="9" >
+                   info@oneauthen.in.th
+                 </b-col>
+                </b-row>
+           </b-col>
+    </b-row>
+</b-container>
   </div>
 </template>
 
+<i18n>
+  {
+  "th": {
+    "Address": "ที่อยู่",
+    "Tel": "โทรศัพท์",
+    "E-mail": "อีเมล์",
+    "Address_body": "บริษัท วัน ออเทน จำกัด ทะเบียนนิติบุคคลเลขที่  0105561069151 ที่อยู่  1768 อาคารไทยซัมมิท ทาวเวอร์ ชั้น 16 ถ.เพชรบุรีตัดใหม่ แขวงบางกะปิ เขตห้วยขวาง กรุงเทพมหานคร 10310"
+  },
+  "en": {
+    "Address": "Address",
+    "Tel": "Tel",
+    "E-mail": "E-mail",
+    "Address_body": "One Authen Company limited"
+  }
+}
+</i18n>
+
+
 <script>
 export default {
-  name: "Footer",
+  name: "Footer"
 };
 </script>
 
@@ -43,15 +61,12 @@ export default {
 <style scoped>
 .footer {
   width: 100%;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  background: #d60103;
+  background: #00b386;
   display: block;
   position: relative;
   color: #fff;
   font-size: 18px;
+  padding: 2%;
 }
 
 .row {
@@ -92,5 +107,4 @@ export default {
     font-size: 10px;
   }
 }
-
 </style>
