@@ -1,15 +1,13 @@
 <template>
-  <div>
-    <DocumentLayout></DocumentLayout>  
+  <div>  
   </div>
-
 </template>
 
 <script>
 import DocumentLayout from "~/layouts/DocumentLayout.vue";
-import CreateStore from "~/store/index.js";
 
 export default {
+  layout: 'DocumentLayout',
   components: {
     DocumentLayout
   }

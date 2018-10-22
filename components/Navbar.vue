@@ -3,7 +3,7 @@
   <div id="section-1">
     <div class="navbar-top" v-scroll="handleScrollnavbar">
       <div class="child-navbar">
-        <div class="logo-text" v-scroll="handleScrolllogo">INET One Authen</div>
+        <div class="logo-text" v-scroll="handleScrolllogo"><span style="font-weight: bolder;">INET</span> ONE CA</div>
         <img style="display:none;" src="~/assets/logo_OneAuthen_500px.png" class="logo" alt="" v-scroll="handleScrolllogo" v-scroll-to="'#section-1'" />
       </div>
       <div class="child-navbar">
@@ -18,10 +18,10 @@
               <a>{{ $t('submenu_solution_sign') }}</a>
             </div>
           </a>
-          <nuxt-link to="/document">
+          <nuxt-link to="document">
             <li>{{ $t('menu_doucument') }} </li>
           </nuxt-link>
-          <nuxt-link to="/about">
+          <nuxt-link to="about">
             <li>{{ $t('menu_contact') }}</li>
           </nuxt-link>
           <a href="#" class="lang-flag-switch">
@@ -29,9 +29,9 @@
           </a>
         </ul>
         <ul v-else-if="clicked === true" class="super-menu-mobile" v-scroll="handleScrollsupermenu">
-          <a class="animated fadeIn" style="display:block" href="#" v-scroll-to="'#section-1'">
+          <nuxt-link to = "/" class="animated fadeIn" style="display:block">
             <li>{{ $t('menu_home') }}</li>
-          </a>
+          </nuxt-link>
           <a class="animated fadeIn" style="display:block" href="#" v-scroll-to="'#section-2'">
             <li @click="collapseSubmenu">{{ $t('menu_solution') }}</li>
             <div v-show="clicked_submenu" class="animated fadeIn content-list-mobile">
@@ -39,12 +39,12 @@
               <a href="">{{ $t('submenu_solution_sign') }}</a>
             </div>
           </a>
-          <a class="animated fadeIn" style="display:block" href="#">
-            <li>{{ $t('menu_doucument') }}</li>
-          </a>
-          <a class="animated fadeIn" style="display:block" href="#">
+          <nuxt-link to="/document" class="animated fadeIn" style="display:block">
+           <li>{{ $t('menu_doucument') }} </li>
+          </nuxt-link>
+          <nuxt-link to="/about" class="animated fadeIn" style="display:block">
             <li>{{ $t('menu_contact') }}</li>
-          </a>
+          </nuxt-link>
         </ul>
       </div>
     </div>
@@ -122,10 +122,6 @@ export default {
   methods: {
     changeLang: function(val) {
       console.log(val);
-      this.$store.state.localLang = val;
-      this.$i18n.locale = val;
-      this.$i18n.set = val;
-      this.$store.commit("setNewLocal", val);
       console.log(this.$store.state.localLang);
     },
 

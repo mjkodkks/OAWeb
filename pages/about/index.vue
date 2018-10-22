@@ -1,12 +1,12 @@
 <template>
-    <AboutLayout></AboutLayout>  
+    <div></div>
 </template>
 
 <script>
 import AboutLayout from "~/layouts/AboutLayout.vue";
-import CreateStore from "~/store/index.js";
 
 export default {
+  layout: "AboutLayout",
   components: {
     AboutLayout
   }

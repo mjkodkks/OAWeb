@@ -113,5 +113,8 @@ export default {
 }
 
 @media screen and (max-height: 736px) and (max-width: 450px) {
+  .name-document {
+    text-align: center;
+  }
 }
 </style>

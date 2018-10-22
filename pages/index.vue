@@ -1,12 +1,12 @@
 <template>
-  <InitLayout></InitLayout>
+  <div></div>
 </template>
 
 <script>
 import InitLayout from "~/layouts/InitLayout.vue";
-import CreateStore from "~/store/index.js";
 
 export default {
+  layout: 'InitLayout',
   components: {
     InitLayout
   }

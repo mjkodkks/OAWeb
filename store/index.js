@@ -14,9 +14,7 @@ const createStore = () => {
             localLang: state => state.localLang
         },
         action: {
-            setNewLocal: (state, localLang) => {
-                state.commit("setNewLocal", localLang)
-            }
+
         }
     })
 }

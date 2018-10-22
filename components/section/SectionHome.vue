@@ -3,7 +3,7 @@
         <div class="container h-100">
             <div class="row align-items-center h-100">
               <div class="col-12 mx-auto"> <div class="title-hero">
-                 <div class="home-title">INET ONE AUTHEN CERTIFICATION AUTHORITY</div>
+                 <div class="home-title"><span style="font-weight:bolder;">INET</span> ONE CA CERTIFICATION AUTHORITY</div>
                  <div class="sup-home-tilte">ผู้ให้บริการออกใบรับรองอิเล็กทรอนิกส์</div>
               </div></div>
             </div>

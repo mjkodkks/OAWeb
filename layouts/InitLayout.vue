@@ -1,8 +1,8 @@
 <template>
   <div>
-    <Navbar></Navbar>
-    <SectionHome></SectionHome>
-    <Footer></Footer>
+    <Navbar />
+    <SectionHome />
+    <Footer />
   </div>
 </template>
 
@@ -11,9 +11,6 @@ import Vue from "vue";
 import Navbar from "~/components/Navbar.vue";
 import Footer from "~/components/Footer.vue";
 import SectionHome from "~/components/section/SectionHome.vue";
-import Vuetify from "vuetify";
-
-Vue.use(Vuetify);
 
 export default {
   name: "InitLayout",
