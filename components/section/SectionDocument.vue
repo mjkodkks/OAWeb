@@ -7,8 +7,8 @@
             <div class="col">
                 <div class="card-document">
                     <div class="open-document">
-                        <div class="btn btn-primary mt-2" style="width:100%;">preview</div>
-                        <div class="btn btn-success mt-2" style="width:100%;" >download</div>
+                      <a class="btn btn-primary mt-2" href="https://drive.google.com/open?id=1slPTfJdtQ7nJAIoT_BaNCgMKECoEtEuq" target="_blank" style="width:100%;">preview</a>
+                      <a class="btn btn-success mt-2" href="https://drive.google.com/uc?export=download&id=1slPTfJdtQ7nJAIoT_BaNCgMKECoEtEuq" style="width:100%;">download</a>
                     </div>
                  </div>
                  <div class="row name-document">แนวปฏิบัติของผู้ให้บริการออกใบรับรองอิเล็กทรอนิกส์แห่งชาติ Thailand NRCA (CPS Version 4.0) (SSL Baseline)</div>

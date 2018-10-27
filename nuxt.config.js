@@ -49,7 +49,6 @@ module.exports = {
           }
         ],
         defaultLocale: "th",
-        vueI18nLoader: true
       }
     ],
     [
@@ -64,6 +63,6 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
-    extend(config, ctx) {}
+    extend(config, ctx) { }
   }
 };

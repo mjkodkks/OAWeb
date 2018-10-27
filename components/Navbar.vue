@@ -3,7 +3,7 @@
   <div id="section-1">
     <div class="navbar-top" v-scroll="handleScrollnavbar">
       <div class="child-navbar">
-        <div class="logo-text" v-scroll="handleScrolllogo"><span style="font-weight: bolder;">INET</span> ONE CA</div>
+        <div class="logo-text" v-scroll="handleScrolllogo"><span>INET</span> ONE CA</div>
         <img style="display:none;" src="~/assets/logo_OneAuthen_500px.png" class="logo" alt="" v-scroll="handleScrolllogo" v-scroll-to="'#section-1'" />
       </div>
       <div class="child-navbar">
