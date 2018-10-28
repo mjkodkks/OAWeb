@@ -9,41 +9,42 @@
       <div class="child-navbar">
         <ul v-if="!ifmobile" class="super-menu" v-scroll="handleScrollsupermenu">
           <nuxt-link to="/">
-          <li>{{ $t('menu_home') }}</li>
+          <li>หน้าหลัก</li>
+          <!-- <li>{{ $t('menu_home') }}</li> -->
           </nuxt-link>
           <a href="#" class="sub-menu">
-            <li>{{ $t('menu_solution') }} <img v-scroll="handleScrolltri" src="~/assets/ICON/bx-play.svg" class="img-sub-menu"></li>
+            <li>โซลูชั่น<img v-scroll="handleScrolltri" src="~/assets/ICON/bx-play.svg" class="img-sub-menu"></li>
             <div class="animated bounceIn content-list">
-              <a>{{ $t('submenu_solution_cer') }}</a>
-              <a>{{ $t('submenu_solution_sign') }}</a>
+              <a>ใบรับรองอิเล็กทรอนิกส์</a>
+              <a>ลายเซ็นอิเล็กทรอนิกส์</a>
             </div>
           </a>
           <nuxt-link to="document">
-            <li>{{ $t('menu_doucument') }} </li>
+            <li>เอกสารเผยแพร่</li>
           </nuxt-link>
           <nuxt-link to="about">
-            <li>{{ $t('menu_contact') }}</li>
+            <li>ติดต่อเรา</li>
           </nuxt-link>
           <a href="#" class="lang-flag-switch">
             <img class="th-switch" src="../assets/ICON/thailand.svg" @click="changeLang('th')">&nbsp;<img class="th-switch" src="../assets/ICON/united-kingdom.svg" @click="changeLang('en')">
           </a>
         </ul>
-        <ul v-else-if="clicked === true" class="super-menu-mobile" v-scroll="handleScrollsupermenu">
+        <ul v-else-if="clicked === true && ifmobile" v-scroll="handleScrollMobile" class="super-menu-mobile-scroll">
           <nuxt-link to = "/" class="animated fadeIn" style="display:block">
-            <li>{{ $t('menu_home') }}</li>
+            <li>หน้าหลัก</li>
           </nuxt-link>
           <a class="animated fadeIn" style="display:block" href="#" v-scroll-to="'#section-2'">
-            <li @click="collapseSubmenu">{{ $t('menu_solution') }}</li>
-            <div v-show="clicked_submenu" class="animated fadeIn content-list-mobile">
-              <a href="">{{ $t('submenu_solution_cer') }}</a>
-              <a href="">{{ $t('submenu_solution_sign') }}</a>
+            <li @click="collapseSubmenu">โซลูชั่น</li>
+            <div v-show="clicked_submenu" class="animated fadeIn content-list-mobile" >
+              <a href="">ใบรับรองอิเล็กทรอนิกส์</a>
+              <a href="">ลายเซ็นอิเล็กทรอนิกส์</a>
             </div>
           </a>
           <nuxt-link to="/document" class="animated fadeIn" style="display:block">
-           <li>{{ $t('menu_doucument') }} </li>
+           <li>เอกสารเผยแพร่</li>
           </nuxt-link>
           <nuxt-link to="/about" class="animated fadeIn" style="display:block">
-            <li>{{ $t('menu_contact') }}</li>
+            <li>ติดต่อเรา</li>
           </nuxt-link>
         </ul>
       </div>
@@ -155,6 +156,11 @@ export default {
         el.setAttribute("class", "img-sub-menu-scroll");
       } else el.setAttribute("class", "img-sub-menu");
     },
+    handleScrollMobile: function(evt, el) {
+      if (window.scrollY > 50) {
+        el.setAttribute("class", "super-menu-mobile-scroll");
+      } else el.setAttribute("class", "super-menu-mobile");
+    },
     handleResize() {
       this.window.width = window.innerWidth;
       this.window.height = window.innerHeight;
@@ -188,11 +194,12 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  transition: height 0.6s ease-in;
 }
 
 .navbar-top-scroll {
   width: 100%;
-  height: 75px;
+  height: 60px;
   position: fixed;
   z-index: 2000;
   background: #fff;
@@ -485,6 +492,30 @@ ul {
     border-left: solid 2px #ee2524;
     border-right: solid 2px #ee2524;
   }
+
+  .super-menu-mobile-scroll {
+    background: #d60103;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 57px;
+  }
+
+  .super-menu-mobile-scroll > a > li {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+  }
+  .super-menu-mobile-scroll > a > li:hover {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    line-height: 45px;
+    color: #ffffff;
+  }
+
   .logo-scroll {
     width: 110px;
     padding: 10px;
@@ -502,8 +533,9 @@ ul {
     cursor: pointer;
     transition: all 1s;
   }
+
   .burger-position-mobile {
-    top: 10px;
+    top: 2px;
     display: block;
     position: fixed;
     z-index: 2001;

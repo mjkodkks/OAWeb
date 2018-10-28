@@ -3,25 +3,25 @@
       <b-container class="bv-example-row">
        <b-row align-h="center">
            <b-col  cols="12">
-               <b-row> 
-                 <b-col cols="3" md="2" >
-                    {{ $t('Address') }} :
+               <b-row > 
+                 <b-col cols="3" md="2" class="text-right">
+                    ที่อยู่ :
                  </b-col>
                  <b-col cols="9" md="10" >
-                     {{ $t('Address_body') }} 
+                     บริษัท วัน ออเทน จำกัด ทะเบียนนิติบุคคลเลขที่  0105561069151 ที่อยู่  1768 อาคารไทยซัมมิท ทาวเวอร์ ชั้น 16 ถ.เพชรบุรีตัดใหม่ แขวงบางกะปิ เขตห้วยขวาง กรุงเทพมหานคร 10310 
                  </b-col>
                 </b-row>
                  <b-row> 
-                 <b-col cols="3" md="2" >
-                    {{ $t('Tel') }} :
+                 <b-col cols="3" md="2" class="text-right">
+                    โทร :
                  </b-col>
-                 <b-col cols="8" >
+                 <b-col cols="8"  >
                    02-257-7269
                  </b-col>
                 </b-row>
                  <b-row> 
-                 <b-col cols="3" md="2" >
-                    {{ $t('E-mail') }} :
+                 <b-col cols="3" md="2" class="text-right" >
+                    อีเมล์ :
                  </b-col>
                  <b-col cols="9" >
                    info@oneauthen.in.th
@@ -61,11 +61,11 @@ export default {
 <style scoped>
 .footer {
   width: 100%;
-  background: #00b386;
+  background: #2dabfb;
   display: block;
   position: relative;
   color: #fff;
-  font-size: 18px;
+  font-size: 1em;
   padding: 2%;
 }
 

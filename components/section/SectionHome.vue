@@ -105,9 +105,30 @@ export default {
   background: #007bff;
 }
 
-@media screen and (max-height: 736px) and (max-width: 450px) {
+@media screen and (max-width: 450px) {
   .footer {
     font-size: 10px;
+  }
+  .title-hero {
+    text-align: center;
+  }
+  .document-warper {
+    display: block;
+    position: absolute;
+    right: 10vw;
+    top: 30vh;
+  }
+
+  .medal-img {
+    display: none;
+  }
+
+  .doc-img-1 {
+    display: none;
+  }
+
+  .doc-img-2 {
+    display: none;
   }
 }
 </style>
