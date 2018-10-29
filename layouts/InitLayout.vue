@@ -2,7 +2,9 @@
   <div>
     <Navbar />
     <SectionHome />
-    <section-knowledge />
+    <SectionKnowledge />
+    <SectionSolution />
+    <SectionWhyuse />
     <Footer />
     <Footer_inet />
   </div>
@@ -14,7 +16,9 @@ import Navbar from "~/components/Navbar.vue";
 import Footer from "~/components/Footer.vue";
 import SectionHome from "~/components/section/SectionHome.vue";
 import SectionKnowledge from "~/components/section/SectionKnowledge.vue";
+import SectionSolution from "~/components/section/SectionSolution.vue";
 import Footer_inet from "~/components/Footer_inet.vue";
+import SectionWhyuse from "~/components/section/SectionWhyuse.vue";
 
 export default {
   name: "InitLayout",
@@ -23,7 +27,9 @@ export default {
     Footer,
     Footer_inet,
     SectionHome,
-    SectionKnowledge
+    SectionKnowledge,
+    SectionSolution,
+    SectionWhyuse
   }
 };
 </script>

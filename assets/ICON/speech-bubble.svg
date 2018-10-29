@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512px" height="512px" class=""><g><path style="fill:#FFCC74;" d="M437,498.4l-67.443-88.8H152v-230h360v220.05L437,498.4z" data-original="#FFCC74" class=""/><polygon style="fill:#FFB55F;" points="332,179.6 332,409.6 369.557,409.6 437,498.4 512,399.65 512,179.6 " data-original="#FFB55F" class=""/><g>
+	<rect x="233" y="249.6" style="fill:#FF9D48;" width="198" height="30" data-original="#FF9D48" class=""/>
+	<rect x="233" y="309.6" style="fill:#FF9D48;" width="148" height="30" data-original="#FF9D48" class=""/>
+</g><g>
+	<rect x="332" y="249.6" style="fill:#FF6E1D;" width="99" height="30" data-original="#FF6E1D" class=""/>
+	<rect x="332" y="309.6" style="fill:#FF6E1D;" width="49" height="30" data-original="#FF6E1D" class=""/>
+</g><path style="fill:#2DABFB" d="M0,377.41V178.6c0-90.981,74.019-165,165-165s165,74.019,165,165s-74.019,165-165,165  c-29.769,0-58.576-7.896-83.946-22.928L0,377.41z" data-original="#AEFFEF" class="" data-old_color="#2dabfb"/><path style="fill:#00A0FF" d="M165,13.6v330c90.981,0,165-74.019,165-165S255.981,13.6,165,13.6z" data-original="#5AFFE7" class="active-path" data-old_color="#0099FF"/><g>
+	<path style="fill:#FFFFFF" d="M180,203.6h-30v-50h15c8.271,0,15-6.729,15-15s-6.729-15-15-15s-15,6.729-15,15h-30   c0-24.813,20.187-45,45-45s45,20.187,45,45c0,19.556-12.539,36.239-30,42.43V203.6z" data-original="#00DDC1" class="" data-old_color="#FCFCFB"/>
+	<rect x="150" y="233.6" style="fill:#FFFFFF" width="30" height="30" data-original="#00DDC1" class="" data-old_color="#FCFCFB"/>
+</g><g>
+	<path style="fill:#FFFFFF" d="M180,138.6c0,8.271-6.729,15-15,15v50h15v-22.57c17.461-6.191,30-22.874,30-42.43   c0-24.813-20.187-45-45-45v30C173.271,123.6,180,130.329,180,138.6z" data-original="#00CCB2" class="" data-old_color="#F6F8FB"/>
+	<rect x="165" y="233.6" style="fill:#FFFFFF" width="15" height="30" data-original="#00CCB2" class="" data-old_color="#F6F8FB"/>
+</g></g> </svg>

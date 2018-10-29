@@ -300,7 +300,7 @@ a {
   min-width: 100px;
   text-align: center;
   line-height: 45px;
-  color: #ee2524;
+  color: #0062cc;
   padding-bottom: 10px;
   border-bottom: solid 5px transparent;
   border-left: solid 2px transparent;
@@ -354,14 +354,14 @@ ul {
   content: "";
   display: block;
   position: absolute;
-  border-left: solid 5px red;
+  border-left: solid 5px #0062cc;
   left: 0;
   height: 0px;
   transition: all 0.3s;
 }
 
 .content-list a:hover {
-  color: #f03938;
+  color: #0062cc;
 }
 
 .content-list a:hover::before {
@@ -466,7 +466,7 @@ ul {
     color: #ffffff;
   }
   .super-menu-scroll {
-    background: #d60103;
+    background: #0062cc;
     position: absolute;
     left: 0;
     right: 0;
@@ -477,7 +477,7 @@ ul {
     width: 100%;
     text-align: center;
     line-height: 45px;
-    background: #d60103;
+    background: #0062cc;
     color: #fff;
     padding: 10px;
   }
@@ -494,7 +494,7 @@ ul {
   }
 
   .super-menu-mobile-scroll {
-    background: #d60103;
+    background: #0062cc;
     position: absolute;
     left: 0;
     right: 0;

@@ -30,7 +30,23 @@ export default {
 .hero-container {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(to top, #ffffff, #35b1ff, #008ce8);
+  /* background: linear-gradient(to top, #ffffff, #35b1ff, #008ce8); */
+}
+
+.hero-container::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: url(https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c1b566f6cf95b8fe438961fd065158cd&auto=format&fit=crop&w=1950&q=80)
+      no-repeat,
+    linear-gradient(to top, #ffffff, #35b1ff, #008ce8);
+  background-position: top center;
+  background-size: cover;
+  background-blend-mode: soft-light;
+  z-index: -1;
 }
 
 .home-title {
@@ -96,13 +112,6 @@ export default {
   top: 0;
   right: 20px;
   transform: perspective(400px) rotateY(-16deg);
-}
-
-.hero-container::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: #007bff;
 }
 
 @media screen and (max-width: 450px) {
