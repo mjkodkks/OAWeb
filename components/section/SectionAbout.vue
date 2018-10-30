@@ -5,12 +5,13 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="row info-title">ข้อมูลบริษัท</div>
-                 <div class="row address-title">บริษัท วัน ออเทน จำกัด ทะเบียนนิติบุคคลเลขที่ 0105561069151</div>
+                 <div class="row address-title">บริษัท อินเทอร์เน็ตประเทศไทย จำกัด (มหาชน)</div>
                 <div class="row info-title">ที่ตั้งบริษัท</div>
-                <div class="row address-title">ที่อยู่ 1768 อาคารไทยซัมมิท ทาวเวอร์ ชั้น 16 ถ.เพชรบุรีตัดใหม่ แขวงบางกะปิ เขตห้วยขวาง กรุงเทพมหานคร 10310</div>
+                <div class="row address-title">หน่วยงานออกใบรับรองอิเล็กทรอนิกส์</div>
+                <div class="row address-title">1768 อาคารไทยซัมมิท ทาวเวอร์ ชั้น 16 ถ.เพชรบุรีตัดใหม่ แขวงบางกะปิ เขตห้วยขวาง กรุงเทพมหานคร 10310</div>
                 
                 <div class="row tel-title"><span><img src="~/assets/ICON/telephone.svg" alt=""></span>โทรศัพท์ : 02-257-7269</div>
-                <div class="row email-title"><span><img src="~/assets/ICON/send.svg" alt=""></span>อีเมล์ : info@oneauthen.in.th</div>
+                <div class="row email-title"><span><img src="~/assets/ICON/send.svg" alt=""></span>อีเมล์ : ra@inet.co.th</div>
 </div>
             <div class="col-md-8 col-xs-12">
               <div class="iframe-container">

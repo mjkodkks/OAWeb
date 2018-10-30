@@ -40,8 +40,7 @@ export default {
   top: 0;
   width: 100%;
   height: 100vh;
-  background: url(https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c1b566f6cf95b8fe438961fd065158cd&auto=format&fit=crop&w=1950&q=80)
-      no-repeat,
+  background: url("~static/ICON/bg-home.jpg") no-repeat,
     linear-gradient(to top, #ffffff, #35b1ff, #008ce8);
   background-position: top center;
   background-size: cover;

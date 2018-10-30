@@ -17,7 +17,7 @@
                         <li>ประเภทนิติบุคคล (Enterprise Certificate)</li>
                     </ul>
                 </div>
-                <div class="row justify-content-md-start justify-content-center"><a class="btn btn-primary mt-4 btn-home">กรอกใบคำขอ รับใบรับรอง</a></div>
+                <div class="row justify-content-md-start justify-content-center"><a class="btn btn-primary mt-4 btn-home" href="ra.inet.co.th" target="_blank">กรอกใบคำขอ รับใบรับรอง</a></div>
             </div>
         </div>
         <div class="row justify-content-center ml-2 mr-2 mt-5 align-items-center">

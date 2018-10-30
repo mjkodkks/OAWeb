@@ -37,7 +37,7 @@ export default {
   width: 100%;
   display: block;
   position: relative;
-  min-height: 300px;
+  min-height: 650px;
   background: #fff;
 }
 

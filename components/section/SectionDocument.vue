@@ -7,8 +7,8 @@
             <div class="col">
                 <div class="card-document">
                     <div class="open-document">
-                      <a class="btn btn-primary mt-2" href="https://drive.google.com/open?id=1slPTfJdtQ7nJAIoT_BaNCgMKECoEtEuq" target="_blank" style="width:100%;">preview</a>
-                      <a class="btn btn-success mt-2" href="https://drive.google.com/uc?export=download&id=1slPTfJdtQ7nJAIoT_BaNCgMKECoEtEuq" style="width:100%;">download</a>
+                      <a class="btn btn-primary mt-2" href="doc/Doc65.pdf" target="_blank" style="width:100%;">preview</a>
+                      <a class="btn btn-success mt-2" href="doc/Doc65.pdf" style="width:100%;" download>download</a>
                     </div>
                  </div>
                  <div class="row name-document">แนวปฏิบัติของผู้ให้บริการออกใบรับรองอิเล็กทรอนิกส์แห่งชาติ Thailand NRCA (CPS Version 4.0) (SSL Baseline)</div>
@@ -69,13 +69,25 @@ export default {
   display: block;
   position: relative;
   height: 300px;
-  background: #ffffff;
+  background: #e2574c;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 20px auto;
-  background-image: url("https://www.nrca.go.th/uploads/Document/16/document_thumbnail.png");
+  /*   background-image: url(~assets/ICON/if_pdfs_774684.svg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
+}
+
+.card-document::before {
+  content: "pdf";
+  display: block;
+  font-size: 2.5em;
+  margin-top: auto;
+  line-height: 300px;
+  margin-bottom: auto;
+  width: 100%;
+  color: #fff;
+  text-align: center;
 }
 
 .card-document:hover .open-document {
