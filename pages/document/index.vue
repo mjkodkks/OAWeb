@@ -1,14 +1,15 @@
 <template>
-    <div></div>
+  <div>  
+  </div>
 </template>
 
 <script>
-import AboutLayout from "~/layouts/AboutLayout.vue";
+import DocumentLayout from "~/layouts/DocumentLayout.vue";
 
 export default {
-  layout: "AboutLayout",
+  layout: 'DocumentLayout',
   components: {
-    AboutLayout
+    DocumentLayout
   }
 };
 </script>
