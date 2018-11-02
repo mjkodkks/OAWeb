@@ -6,6 +6,7 @@
         <div class="row justify-content-center">
             <div class="col">
                 <div class="card-document">
+                   <div class="text-card">Certificate Policy (CP)</div>
                     <div class="open-document">
                       <div class="btn-warper">
                       <a class="btn btn-primary btn-preview mt-2" href="doc/Certificate Policy.pdf" target="_blank" style="width:100%;">preview</a>
@@ -13,10 +14,11 @@
                     </div>
                     </div>
                  </div>
-                 <div class="row justify-content-center name-document">แนวยโยบายของผู้ให้บริการออกใบรับรองอิเล็กทรอนิกส์ One CA</div>
+                 <div class="row justify-content-center name-document">แนวนโยบายของผู้ให้บริการออกใบรับรองอิเล็กทรอนิกส์ One CA</div>
                  <div class="row justify-content-center publised">Publish: 2.11.2018</div>
              </div>
             <div class="col"><div class="card-document">
+              <div class="text-card">Certification Practice Statement (CPS)</div>
                     <div class="open-document">
                       <div class="btn-warper">
                       <a class="btn btn-primary btn-preview mt-2" href="doc/Certification Practice Statement.pdf" target="_blank" style="width:100%;">preview</a>
@@ -27,6 +29,7 @@
                  <div class="row name-document">แนวปฏิบัติของผู้ให้บริการออกใบรับรองอิเล็กทรอนิกส์ One CA</div>
                  <div class="row justify-content-center publised">Publish: 2.11.2018</div></div>
             <div class="col"><div class="card-document">
+              <div class="text-card">Privacy Policy</div>
                     <div class="open-document">
                       <div class="btn-warper">
                       <a class="btn btn-primary btn-preview mt-2" href="doc/Data Privacy Policy.pdf" target="_blank" style="width:100%;">preview</a>
@@ -41,6 +44,7 @@
         <div class="row justify-content-start"><span class="contact-title-sub mt-5">แบบคำขอ</span></div>
         <div class="row justify-content-center mb-5">
             <div class="col"><div class="card-document">
+              <div class="text-card">Request</div>
                     <div class="open-document">
                       <div class="btn-warper">
                         <div class="btn btn-primary btn-preview mt-2" style="width:100%;">preview</div>
@@ -52,6 +56,7 @@
                         แบบคำขอใช้บริการใบรับรองอิเล็กทรอนิกส์</div>
                  <div class="row justify-content-center publised">Publish: 31.08.2018</div></div>
             <div class="col"><div class="card-document">
+              <div class="text-card">Revoke</div>
                     <div class="open-document">
                       <div class="btn-warper">
                         <div class="btn btn-primary btn-preview mt-2" style="width:100%;">preview</div>
@@ -108,21 +113,15 @@ export default {
   background-size: cover; */
 }
 
-.card-document::before {
-  content: "pdf";
-  display: block;
-  font-size: 2.5em;
-  margin-top: auto;
-  line-height: 230px;
-  margin-bottom: auto;
+.text-card {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5em;
+  justify-content: center;
   width: 100%;
+  height: 100%;
   color: #1196ee;
   text-align: center;
-}
-
-.card-document:hover ::before {
-  line-height: 200px;
-  background: red;
 }
 
 .card-document:hover .open-document {
