@@ -26,6 +26,7 @@ export default {
 
 .hero-container {
   width: 100%;
+  background: #fff;
   min-height: 300px;
   display: block;
   position: relative;
@@ -61,6 +62,9 @@ export default {
   }
   .padding-article {
     padding: 0;
+  }
+  .hero-container {
+    min-height: 600px;
   }
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-<div class="hero-container mb-4">
+<div class="hero-container">
     <div class="container padding-article">
         <div class="row justify-content-center ml-2 mr-2">
             <span class="title-why">ทำไมต้องใช้แพลต์ฟอร์ม ONE CA</span>

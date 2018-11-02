@@ -7,16 +7,30 @@
             <div class="col">
                 <div class="card-document">
                     <div class="open-document">
-                      <a class="btn btn-primary mt-2" href="doc/Doc65.pdf" target="_blank" style="width:100%;">preview</a>
-                      <a class="btn btn-success mt-2" href="doc/Doc65.pdf" style="width:100%;" download>download</a>
+                      <a class="btn btn-primary mt-2" href="doc/Certificate Policy.pdf" target="_blank" style="width:100%;">preview</a>
+                      <a class="btn btn-success mt-2" href="doc/Certificate Policy.pdf" style="width:100%;" download>download</a>
                     </div>
                  </div>
-                 <div class="row name-document">แนวปฏิบัติของผู้ให้บริการออกใบรับรองอิเล็กทรอนิกส์แห่งชาติ Thailand NRCA (CPS Version 4.0) (SSL Baseline)</div>
-                 <div class="row justify-content-center publised">Publish: 31.08.2018</div>
+                 <div class="row name-document">แนวยโยบายของผู้ให้บริการออกใบรับรองอิเล็กทรอนิกส์ One CA</div>
+                 <div class="row justify-content-center publised">Publish: 2.11.2018</div>
              </div>
-            <div class="col"><div class="card-document"></div></div>
-            <div class="col"><div class="card-document"></div></div>
-            <div class="col"><div class="card-document"></div></div>
+            <div class="col"><div class="card-document">
+                    <div class="open-document">
+                      <a class="btn btn-primary mt-2" href="doc/Certification Practice Statement.pdf" target="_blank" style="width:100%;">preview</a>
+                      <a class="btn btn-success mt-2" href="doc/Certification Practice Statement.pdf" style="width:100%;" download>download</a>
+                    </div>
+                 </div>
+                 <div class="row name-document">แนวปฏิบัติของผู้ให้บริการออกใบรับรองอิเล็กทรอนิกส์ One CA</div>
+                 <div class="row justify-content-center publised">Publish: 2.11.2018</div></div>
+            <div class="col"><div class="card-document">
+                    <div class="open-document">
+                      <a class="btn btn-primary mt-2" href="doc/Data Privacy Policy.pdf" target="_blank" style="width:100%;">preview</a>
+                      <a class="btn btn-success mt-2" href="doc/Data Privacy Policy.pdf" style="width:100%;" download>download</a>
+                    </div>
+                 </div>
+                 <div class="row justify-content-center name-document">นโยบายคุ้มครองข้อมูลส่วนบุคคล</div>
+                 <div class="row justify-content-center publised">Publish: 2.11.2018</div></div>
+            <div class="col"></div>
         </div>
         <div class="row justify-content-start"><span class="contact-title-sub mt-5">แบบคำขอ</span></div>
         <div class="row justify-content-center mb-5">
@@ -28,9 +42,9 @@
                  </div>
                  <div class="row name-document">แนวปฏิบัติของผู้ให้บริการออกใบรับรองอิเล็กทรอนิกส์แห่งชาติ Thailand NRCA (CPS Version 4.0) (SSL Baseline)</div>
                  <div class="row justify-content-center publised">Publish: 31.08.2018</div></div>
-            <div class="col"><div class="card-document"></div></div>
-            <div class="col"><div class="card-document"></div></div>
-            <div class="col"><div class="card-document"></div></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
         </div>
     </div>
     </div>
@@ -52,7 +66,7 @@ export default {
 
 .contact-title {
   font-size: 2em;
-  margin-bottom: 30px;
+  margin: 30px 0;
   color: #f0f8ff;
 }
 
@@ -65,11 +79,11 @@ export default {
 }
 
 .card-document {
-  width: 220px;
+  width: 180px;
   display: block;
   position: relative;
-  height: 300px;
-  background: #e2574c;
+  height: 230px;
+  background: #f0f0f0;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 20px auto;
   /*   background-image: url(~assets/ICON/if_pdfs_774684.svg);
@@ -83,16 +97,21 @@ export default {
   display: block;
   font-size: 2.5em;
   margin-top: auto;
-  line-height: 300px;
+  line-height: 230px;
   margin-bottom: auto;
   width: 100%;
-  color: #fff;
+  color: #1196ee;
   text-align: center;
+}
+
+.card-document:hover ::before {
+  line-height: 200px;
+  background: red;
 }
 
 .card-document:hover .open-document {
   visibility: visible;
-  height: 40%;
+  height: 50%;
   transition: all 0.2s ease-in;
 }
 
@@ -109,6 +128,7 @@ export default {
   color: #ffff;
   overflow: hidden;
   transition: all 0.2s ease-in;
+  text-transform: uppercase;
 }
 
 .publised {

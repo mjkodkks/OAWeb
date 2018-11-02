@@ -9,7 +9,7 @@ export default {
   layout: 'InitLayout',
   components: {
     InitLayout
-  }
+  },
 };
 </script>
 

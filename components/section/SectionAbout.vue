@@ -40,7 +40,7 @@ export default {
 
 .contact-title {
   font-size: 2em;
-  margin-bottom: 30px;
+  margin: 30px 0;
   color: #f0f8ff;
 }
 
