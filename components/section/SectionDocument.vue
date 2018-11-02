@@ -7,44 +7,60 @@
             <div class="col">
                 <div class="card-document">
                     <div class="open-document">
-                      <a class="btn btn-primary mt-2" href="doc/Certificate Policy.pdf" target="_blank" style="width:100%;">preview</a>
-                      <a class="btn btn-success mt-2" href="doc/Certificate Policy.pdf" style="width:100%;" download>download</a>
+                      <div class="btn-warper">
+                      <a class="btn btn-primary btn-preview mt-2" href="doc/Certificate Policy.pdf" target="_blank" style="width:100%;">preview</a>
+                      <a class="btn btn-success btn-download mt-2" href="doc/Certificate Policy.pdf" style="width:100%;" download>download</a>
+                    </div>
                     </div>
                  </div>
-                 <div class="row name-document">แนวยโยบายของผู้ให้บริการออกใบรับรองอิเล็กทรอนิกส์ One CA</div>
+                 <div class="row justify-content-center name-document">แนวยโยบายของผู้ให้บริการออกใบรับรองอิเล็กทรอนิกส์ One CA</div>
                  <div class="row justify-content-center publised">Publish: 2.11.2018</div>
              </div>
             <div class="col"><div class="card-document">
                     <div class="open-document">
-                      <a class="btn btn-primary mt-2" href="doc/Certification Practice Statement.pdf" target="_blank" style="width:100%;">preview</a>
-                      <a class="btn btn-success mt-2" href="doc/Certification Practice Statement.pdf" style="width:100%;" download>download</a>
+                      <div class="btn-warper">
+                      <a class="btn btn-primary btn-preview mt-2" href="doc/Certification Practice Statement.pdf" target="_blank" style="width:100%;">preview</a>
+                      <a class="btn btn-success btn-download mt-2" href="doc/Certification Practice Statement.pdf" style="width:100%;" download>download</a>
+                      </div>
                     </div>
                  </div>
                  <div class="row name-document">แนวปฏิบัติของผู้ให้บริการออกใบรับรองอิเล็กทรอนิกส์ One CA</div>
                  <div class="row justify-content-center publised">Publish: 2.11.2018</div></div>
             <div class="col"><div class="card-document">
                     <div class="open-document">
-                      <a class="btn btn-primary mt-2" href="doc/Data Privacy Policy.pdf" target="_blank" style="width:100%;">preview</a>
-                      <a class="btn btn-success mt-2" href="doc/Data Privacy Policy.pdf" style="width:100%;" download>download</a>
+                      <div class="btn-warper">
+                      <a class="btn btn-primary btn-preview mt-2" href="doc/Data Privacy Policy.pdf" target="_blank" style="width:100%;">preview</a>
+                      <a class="btn btn-success btn-download mt-2" href="doc/Data Privacy Policy.pdf" style="width:100%;" download>download</a>
+                      </div>
                     </div>
                  </div>
                  <div class="row justify-content-center name-document">นโยบายคุ้มครองข้อมูลส่วนบุคคล</div>
                  <div class="row justify-content-center publised">Publish: 2.11.2018</div></div>
-            <div class="col"></div>
+        
         </div>
         <div class="row justify-content-start"><span class="contact-title-sub mt-5">แบบคำขอ</span></div>
         <div class="row justify-content-center mb-5">
             <div class="col"><div class="card-document">
                     <div class="open-document">
-                        <div class="btn btn-primary mt-2" style="width:100%;">preview</div>
-                        <div class="btn btn-success mt-2" style="width:100%;" >download</div>
+                      <div class="btn-warper">
+                        <div class="btn btn-primary btn-preview mt-2" style="width:100%;">preview</div>
+                        <div class="btn btn-success btn-download mt-2" style="width:100%;" >download</div>
+                      </div>
                     </div>
                  </div>
-                 <div class="row name-document">แนวปฏิบัติของผู้ให้บริการออกใบรับรองอิเล็กทรอนิกส์แห่งชาติ Thailand NRCA (CPS Version 4.0) (SSL Baseline)</div>
+                 <div class="row name-document justify-content-center">
+                        แบบคำขอใช้บริการใบรับรองอิเล็กทรอนิกส์</div>
                  <div class="row justify-content-center publised">Publish: 31.08.2018</div></div>
-            <div class="col"></div>
-            <div class="col"></div>
-            <div class="col"></div>
+            <div class="col"><div class="card-document">
+                    <div class="open-document">
+                      <div class="btn-warper">
+                        <div class="btn btn-primary btn-preview mt-2" style="width:100%;">preview</div>
+                        <div class="btn btn-success btn-download mt-2" style="width:100%;" >download</div>
+                      </div>
+                    </div>
+                 </div>
+                 <div class="row justify-content-center name-document">แบบคำขอคำขอเพิกถอนใบรับรองอิเล็กทรอนิกส์ภายใต้</div>
+                 <div class="row justify-content-center publised">Publish: 31.08.2018</div></div>
         </div>
     </div>
     </div>
@@ -111,7 +127,7 @@ export default {
 
 .card-document:hover .open-document {
   visibility: visible;
-  height: 50%;
+  height: 100%;
   transition: all 0.2s ease-in;
 }
 
@@ -122,7 +138,7 @@ export default {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: #20252961;
+  background: rgb(191, 231, 255);
   text-align: center;
   padding: 3%;
   color: #ffff;
@@ -138,6 +154,52 @@ export default {
 
 .name-document {
   text-align: center;
+  width: 250px;
+  margin: 0 auto;
+}
+
+.btn-warper {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.btn-preview {
+  border: 0;
+  border-radius: 1rem;
+  padding: 12px 50px;
+  border-radius: 1.5rem;
+  background: #fff;
+  color: #007bff;
+  border: 0;
+  font-size: 1em;
+  text-transform: uppercase;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn-download {
+  border: 0;
+  border-radius: 1rem;
+  padding: 12px 0;
+  border-radius: 1.5rem;
+  background: #fff;
+  color: #007bff;
+  border: 0;
+  font-size: 1em;
+  text-transform: uppercase;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn-preview:hover {
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.2);
+  opacity: 0.85;
+  transition: opacity 0.15s ease-in;
+}
+.btn-download:hover {
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.2);
+  opacity: 0.85;
+  transition: opacity 0.15s ease-in;
 }
 
 .pt-top {
