@@ -95,9 +95,23 @@ export default {
   height: auto;
 }
 
-@media screen and (max-height: 736px) and (max-width: 450px) {
+@media screen and (max-width: 450px) {
   .footer {
     font-size: 10px;
   }
+  .hero-container {
+  min-height: 1320px;
+}
+.img-why {
+    margin-top: 20px;
+}
+.title-why {
+    font-size: 2em;
+    margin: 2.5em 0 0 0;
+    text-align: center;
+}
+.body-why{
+    text-align: center;
+}
 }
 </style>

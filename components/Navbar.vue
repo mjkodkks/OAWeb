@@ -15,8 +15,8 @@
           <a href="#" class="sub-menu">
             <li>โซลูชั่น<img v-scroll="handleScrolltri" src="~/assets/ICON/bx-play.svg" class="img-sub-menu"></li>
             <div class="animated bounceIn content-list">
-              <a>ใบรับรองอิเล็กทรอนิกส์</a>
-              <a>ลายเซ็นอิเล็กทรอนิกส์</a>
+              <a href="https://ra.oneauthen.in.th/" target="_blank">ใบรับรองอิเล็กทรอนิกส์</a>
+              <a href="https://sign.one.th/" target="_blank">ลายเซ็นอิเล็กทรอนิกส์</a>
             </div>
           </a>
           <nuxt-link to="document">
@@ -37,7 +37,7 @@
             <li @click="collapseSubmenu">โซลูชั่น</li>
             <div v-show="clicked_submenu" class="animated fadeIn content-list-mobile" >
               <a href="">ใบรับรองอิเล็กทรอนิกส์</a>
-              <a href="">ลายเซ็นอิเล็กทรอนิกส์</a>
+              <a href="www.sign.one.th">ลายเซ็นอิเล็กทรอนิกส์</a>
             </div>
           </a>
           <nuxt-link to="/document" class="animated fadeIn" style="display:block">
@@ -103,6 +103,11 @@ export default {
   mounted() {
     window.addEventListener("resize", this.handleResize);
     this.handleResize();
+    this.$nextTick(() => {
+      this.$nuxt.$loading.start()
+
+      setTimeout(() => this.$nuxt.$loading.finish(), 500)
+    })
   },
   destroyed() {
     window.removeEventListener("resize", this.handleResize);
