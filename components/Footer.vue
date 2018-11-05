@@ -5,15 +5,15 @@
            <b-col  cols="12">
                <b-row > 
                  <b-col cols="3" md="2" class="text-right">
-                    ที่อยู่ :
+                    {{$t('address.address')}} :
                  </b-col>
                  <b-col cols="9" md="10" >
-                     บริษัท อินเทอร์เน็ตประเทศไทย จำกัด (มหาชน) หน่วยงานออกใบรับรองอิเล็กทรอนิกส์ ที่อยู่  1768 อาคารไทยซัมมิท ทาวเวอร์ ชั้น 16 ถ.เพชรบุรีตัดใหม่ แขวงบางกะปิ เขตห้วยขวาง กรุงเทพมหานคร 10310 
+                     {{$t('address.mess-address')}}
                  </b-col>
                 </b-row>
                  <b-row> 
                  <b-col cols="3" md="2" class="text-right">
-                    โทร :
+                    {{$t('address.tel')}} :
                  </b-col>
                  <b-col cols="8"  >
                    02-257-7269
@@ -21,7 +21,7 @@
                 </b-row>
                  <b-row> 
                  <b-col cols="3" md="2" class="text-right" >
-                    อีเมล์ :
+                    {{$t('address.email')}} :
                  </b-col>
                  <b-col cols="9" >
                    info@oneauthen.in.th
@@ -32,24 +32,6 @@
 </b-container>
   </div>
 </template>
-
-<i18n>
-  {
-  "th": {
-    "Address": "ที่อยู่",
-    "Tel": "โทรศัพท์",
-    "E-mail": "อีเมล์",
-    "Address_body": "บริษัท วัน ออเทน จำกัด ทะเบียนนิติบุคคลเลขที่  0105561069151 ที่อยู่  1768 อาคารไทยซัมมิท ทาวเวอร์ ชั้น 16 ถ.เพชรบุรีตัดใหม่ แขวงบางกะปิ เขตห้วยขวาง กรุงเทพมหานคร 10310"
-  },
-  "en": {
-    "Address": "Address",
-    "Tel": "Tel",
-    "E-mail": "E-mail",
-    "Address_body": "One Authen Company limited"
-  }
-}
-</i18n>
-
 
 <script>
 export default {

@@ -6,7 +6,7 @@
                 <div class="title-hero">
                    <div class="home-title"><span>INET</span> ONE CA CERTIFICATION AUTHORITY</div>
                    <div class="sup-home-tilte">ผู้ให้บริการออกใบรับรองอิเล็กทรอนิกส์</div>
-                   <a href="#" class="btn btn-primary mt-4 btn-home">กรอกใบคำขอ รับใบรับรอง</a>
+                   <a href="#" class="btn btn-primary mt-4 btn-home">{{ $t('home.btn-submit-form') }}</a>
                 </div>
               </div>
             </div>

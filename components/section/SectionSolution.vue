@@ -2,32 +2,32 @@
 <div class="hero-container pt-5">
     <div class="container padding-article">
         <div class="row justify-content-center ml-2 mr-2">
-            <span class="title-sl">โซลูชั่น</span>
+            <span class="title-sl">{{ $t('home.title-solution') }}</span>
         </div>
         <div class="row justify-content-center ml-2 mr-2 align-items-center">
             <div class="col-12 col-md-6 order-first"><img src="~/assets/ICON/solutionType.png" alt="" class="img-thumbnail"></div>
             <div class="col-12 col-md-6">
                 <div class="row justify-content-start">
-                    <span class="title-solution">บริการออกใบรับรองอิเล็กทรอนิกส์</span>
+                    <span class="title-solution">{{ $t('home.title-caservice') }}</span>
                 </div>
                 <div class="row">
-                    <span class="body-solution">เราแบ่งการให้บริการออกใบรับรองอิเล็กทรอนิกส์ ออกเป็น 2 ประเภทด้วยกันคือ</span>
+                    <span class="body-solution">{{ $t('home.mess-caservice') }}</span>
                     <ul class="list-sollution">
-                        <li>ประเภทบุคคล (Personal Certificate)</li>
-                        <li>ประเภทนิติบุคคล (Enterprise Certificate)</li>
+                        <li>{{ $t('home.caservice-personal') }}</li>
+                        <li>{{ $t('home.caservice-enterprise') }}</li>
                     </ul>
                 </div>
-                <div class="row justify-content-md-start justify-content-center"><a class="btn btn-primary mt-4 btn-home" href="ra.inet.co.th" target="_blank">กรอกใบคำขอ รับใบรับรอง</a></div>
+                <div class="row justify-content-md-start justify-content-center"><a class="btn btn-primary mt-4 btn-home" href="ra.inet.co.th" target="_blank">{{ $t('home.btn-submit-form') }}</a></div>
             </div>
         </div>
         <div class="row justify-content-center ml-2 mr-2 mt-5 align-items-center">
             <div class="col-12 col-md-6"><div class="row justify-content-end">
-                    <span class="title-solution">บริการการลงลายมืออิเล็กทรอนิกส์</span>
+                    <span class="title-solution">{{ $t('home.title-digitalsignature') }}</span>
                 </div>
                 <div class="row">
-                    <span class="body-solution">แพลตฟอร์มลงลายมือชื่ออิเล็กทรอนิกส์ที่น่าเชื่อถือ ได้รับมาตรฐานความปลอดภัย ISO27001 และมาตรฐานในการให้บริการ ISO20000 ช่วยให้คุณสามารถนำเอกสาร PDF เข้ามาทำ Digital Signing ได้</span>
+                    <span class="body-solution">{{ $t('home.mess-digitalsignature') }}</span>
                 </div>
-                <div class="row justify-content-md-end justify-content-center"><a class="btn btn-primary mt-4 btn-home" href="http://sign.one.th" target="_blank">ใช้งานระบบลายเซ็นอิเล็กทรอนิกส์</a></div></div>
+                <div class="row justify-content-md-end justify-content-center"><a class="btn btn-primary mt-4 btn-home" href="http://sign.one.th" target="_blank">{{ $t('home.login-digitalsignature') }}</a></div></div>
             <div class="col-12 col-md-6 order-first order-md-last"><img src="~/assets/ICON/digitalsignature.png" alt="" class="img-thumbnail"></div>
         </div>
     </div>
@@ -100,18 +100,18 @@ export default {
     font-size: 10px;
   }
   .hero-container {
-  min-height: 1320px;
-}
-.img-why {
+    min-height: 1320px;
+  }
+  .img-why {
     margin-top: 20px;
-}
-.title-why {
+  }
+  .title-why {
     font-size: 2em;
     margin: 2.5em 0 0 0;
     text-align: center;
-}
-.body-why{
+  }
+  .body-why {
     text-align: center;
-}
+  }
 }
 </style>

@@ -2,23 +2,23 @@
 <div class="hero-container">
     <div class="container padding-article">
         <div class="row justify-content-center ml-2 mr-2">
-            <span class="title-why">ทำไมต้องใช้แพลต์ฟอร์ม ONE CA</span>
+            <span class="title-why">{{$t('home.whyuse-oneca')}}</span>
         </div>
         <div class="row justify-content-center ml-2 mr-2 align-items-center">
             <div class="col-12 col-md align-self-start">
               <div class="row justify-content-center"><img src="~/assets/ICON/approved.svg" class="img-why"></div>
-              <div class="row justify-content-center"><span class="topic-why">มาตราฐานสากล</span></div>
-              <div class="row"><span class="body-why">บริการออกใบรับรองฯ ของ One CA ได้รับการรับรองมาตรฐานความปลอดภัยสากล ISO27001 และ Webtrust for CA ใบรับรองฯ จาก ONE CA มีความถูกต้อง เที่ยงตรง และปลอดภัย ในระดับเดียวกับ CA สากลทั่วโลก</span></div>
+              <div class="row justify-content-center"><span class="topic-why">{{$t('home.standard')}}</span></div>
+              <div class="row"><span class="body-why">{{$t('home.mess-standard')}}</span></div>
             </div>
             <div class="col-12 col-md align-self-start">
                <div class="row justify-content-center"><img src="~/assets/ICON/running-man.svg" class="img-why"></div>
-              <div class="row justify-content-center"><span class="topic-why">สะดวกรวดเร็ว</span></div>
-              <div class="row"><span class="body-why">ผู้ใช้บริการสามารถสร้างใบคำขอใบรับรองฯ และรับใบรับรองฯได้ด้วยตนเอง ผ่านทางเว็บไซต์ ทำให้สะดวกและประหยัดเวลา ทั้งนี้ ก่อนใบรับรองฯหมดอายุ ผู้ใช้บริการจะได้รับอีเมล์แจ้งเตือนล่วงหน้าให้มาขอใหม่ ป้องกันปัญหาการใช้งานหยุดชะงัก</span></div>
+              <div class="row justify-content-center"><span class="topic-why">{{$t('home.convenient')}}</span></div>
+              <div class="row"><span class="body-why">{{$t('home.mess-convenient')}}</span></div>
             </div>
             <div class="col-12 col-md align-self-start">
               <div class="row justify-content-center"><img src="~/assets/ICON/speech-bubble.svg" class="img-why"></div>
-              <div class="row justify-content-center"><span class="topic-why">ให้คำปรึกษาและบริการ</span></div>
-              <div class="row"><span class="body-why">สามารถให้บริการได้อย่างต่อเนื่อง และมีเจ้าหน้าที่ให้คำปรึกษาตลอดการใช้บริการ </span></div>
+              <div class="row justify-content-center"><span class="topic-why">{{$t('home.advice')}}</span></div>
+              <div class="row"><span class="body-why">{{$t('home.mess-advice')}}</span></div>
             </div>
         </div>
     </div>

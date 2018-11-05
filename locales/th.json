@@ -1,0 +1,16 @@
+{
+    "links": {
+        "home": "หน้าหลัก",
+        "solution": "โซลูชั่น",
+        "document": "เอกสารเผยแพร่",
+        "contact": "ติดต่อเรา"
+    },
+    "home": {
+        "btn-submit-form": "Register Now",
+        "introduction": "This is an introduction in English."
+    },
+    "about": {
+        "title": "About",
+        "introduction": "This page is made to give you more informations."
+    }
+}

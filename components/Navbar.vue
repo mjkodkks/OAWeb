@@ -8,26 +8,26 @@
       </div>
       <div class="child-navbar">
         <ul v-if="!ifmobile" class="super-menu" v-scroll="handleScrollsupermenu">
-          <nuxt-link to="/">
-          <li>หน้าหลัก</li>
+          <nuxt-link :to="localePath('index')">
+          <li>{{ $t('links.home') }}</li>
           <!-- <li>{{ $t('menu_home') }}</li> -->
           </nuxt-link>
           <a href="#" class="sub-menu">
-            <li>โซลูชั่น<img v-scroll="handleScrolltri" src="~/assets/ICON/bx-play.svg" class="img-sub-menu"></li>
+            <li>{{ $t('links.solution') }}<img v-scroll="handleScrolltri" src="~/assets/ICON/bx-play.svg" class="img-sub-menu"></li>
             <div class="animated bounceIn content-list">
-              <a href="https://ra.oneauthen.in.th/" target="_blank">ใบรับรองอิเล็กทรอนิกส์</a>
-              <a href="https://sign.one.th/" target="_blank">ลายเซ็นอิเล็กทรอนิกส์</a>
+              <a href="https://ra.oneauthen.in.th/" target="_blank">{{ $t('links.certification') }}</a>
+              <a href="https://sign.one.th/" target="_blank">{{ $t('links.digitalsignature') }}</a>
             </div>
           </a>
-          <nuxt-link to="document">
-            <li>เอกสารเผยแพร่</li>
+          <nuxt-link :to="localePath('document')">
+            <li>{{ $t('links.document') }}</li>
           </nuxt-link>
           <nuxt-link to="about">
-            <li>ติดต่อเรา</li>
+            <li>{{ $t('links.contact') }}</li>
           </nuxt-link>
-          <a href="#" class="lang-flag-switch">
-            <img class="th-switch" src="../assets/ICON/thailand.svg" @click="changeLang('th')">&nbsp;<img class="th-switch" src="../assets/ICON/united-kingdom.svg" @click="changeLang('en')">
-          </a>
+          <div class="lang-flag-switch">
+            <nuxt-link :to="switchLocalePath('th')"><img class="th-switch" src="../assets/ICON/thailand.svg"></nuxt-link>&nbsp;<nuxt-link :to="switchLocalePath('en')"><img class="th-switch" src="../assets/ICON/united-kingdom.svg"></nuxt-link>
+          </div>
         </ul>
         <ul v-else-if="clicked === true && ifmobile" v-scroll="handleScrollMobile" class="super-menu-mobile-scroll">
           <nuxt-link to = "/" class="animated fadeIn" style="display:block">
@@ -59,27 +59,6 @@
   </div>
 </template>
 
-<i18n>
-  {
-  "th": {
-    "menu_home": "หน้าหลัก",
-    "menu_solution": "โซลูชั่น",
-    "submenu_solution_cer": "บริการออกใบรับรอง",
-    "submenu_solution_sign": "ลายเซ็นอิเล็กทรอนิกส์",
-    "menu_doucument": "เอกสารเผยแพร่",
-    "menu_contact": "ติดต่อเรา"
-  },
-  "en": {
-    "menu_home": "Home",
-    "menu_solution": "Solution",
-     "submenu_solution_cer": "CERTIFICATION",
-    "submenu_solution_sign": "DIGITAL SIGNING",
-    "menu_doucument": "Document",
-    "menu_contact": "Contact"
-  }
-}
-</i18n>
-
 <script>
 import Vue from "vue";
 import hambergers from "~/node_modules/hamburgers/dist/hamburgers.min.css";
@@ -104,10 +83,10 @@ export default {
     window.addEventListener("resize", this.handleResize);
     this.handleResize();
     this.$nextTick(() => {
-      this.$nuxt.$loading.start()
+      this.$nuxt.$loading.start();
 
-      setTimeout(() => this.$nuxt.$loading.finish(), 500)
-    })
+      setTimeout(() => this.$nuxt.$loading.finish(), 500);
+    });
   },
   destroyed() {
     window.removeEventListener("resize", this.handleResize);
@@ -126,11 +105,6 @@ export default {
     };
   },
   methods: {
-    changeLang: function(val) {
-      console.log(val);
-      console.log(this.$store.state.localLang);
-    },
-
     handleScrollnavbar: function(evt, el) {
       if (window.scrollY > 50 && !this.clicked) {
         //console.log(this.clicked);
@@ -408,6 +382,7 @@ ul {
 
 .lang-flag-switch {
   vertical-align: text-top;
+  display: inherit;
 }
 
 .th-switch {

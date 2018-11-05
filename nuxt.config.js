@@ -44,14 +44,18 @@ module.exports = {
         locales: [
           {
             code: "th",
-            iso: "th-TH"
+            iso: "th-TH",
+            file: 'th.js'
           },
           {
             code: "en",
-            iso: "en-US"
+            iso: "en-US",
+            file: 'en.js'
           }
         ],
         defaultLocale: "th",
+        lazy: true,
+        langDir: 'locales/',
       }
     ],
     [
