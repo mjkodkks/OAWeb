@@ -1,8 +1,8 @@
 <template>
 <div class="hero-container">
     <div class="container pt-top">
-        <div class="row justify-content-center"><span class="contact-title">เอกสารเผยแพร่</span></div>
-        <div class="row justify-content-start"><span class="contact-title-sub">แนวนโยบาย</span></div>
+        <div class="row justify-content-center"><span class="contact-title">{{$t('document.title-document')}}</span></div>
+        <div class="row justify-content-start"><span class="contact-title-sub">{{$t('document.CPCPS')}}</span></div>
         <div class="row justify-content-center">
             <div class="col">
                 <div class="card-document">
@@ -14,7 +14,7 @@
                     </div>
                     </div>
                  </div>
-                 <div class="row justify-content-center name-document">แนวนโยบายของผู้ให้บริการออกใบรับรองอิเล็กทรอนิกส์ One CA</div>
+                 <div class="row justify-content-center name-document">{{$t('document.CP')}}</div>
                  <div class="row justify-content-center publised">Publish: 2.11.2018</div>
              </div>
             <div class="col"><div class="card-document">
@@ -26,7 +26,7 @@
                       </div>
                     </div>
                  </div>
-                 <div class="row name-document">แนวปฏิบัติของผู้ให้บริการออกใบรับรองอิเล็กทรอนิกส์ One CA</div>
+                 <div class="row name-document">{{$t('document.CPS')}}</div>
                  <div class="row justify-content-center publised">Publish: 2.11.2018</div></div>
             <div class="col"><div class="card-document">
               <div class="text-card">Privacy Policy</div>
@@ -37,14 +37,14 @@
                       </div>
                     </div>
                  </div>
-                 <div class="row justify-content-center name-document">นโยบายคุ้มครองข้อมูลส่วนบุคคล</div>
+                 <div class="row justify-content-center name-document">{{$t('document.PrivacyPolicy')}}</div>
                  <div class="row justify-content-center publised">Publish: 2.11.2018</div></div>
         
         </div>
         <div class="row justify-content-start"><span class="contact-title-sub mt-5">แบบคำขอ</span></div>
         <div class="row justify-content-center mb-5">
             <div class="col"><div class="card-document">
-              <div class="text-card">Request</div>
+              <div class="text-card">{{$t('document.title-RequestForm')}}</div>
                     <div class="open-document">
                       <div class="btn-warper">
                         <div class="btn btn-primary btn-preview mt-2" style="width:100%;">preview</div>
@@ -53,7 +53,7 @@
                     </div>
                  </div>
                  <div class="row name-document justify-content-center">
-                        แบบคำขอใช้บริการใบรับรองอิเล็กทรอนิกส์</div>
+                        {{$t('document.RequestForms')}}</div>
                  <div class="row justify-content-center publised">Publish: 31.08.2018</div></div>
             <div class="col"><div class="card-document">
               <div class="text-card">Revoke</div>
@@ -64,7 +64,7 @@
                       </div>
                     </div>
                  </div>
-                 <div class="row justify-content-center name-document">แบบคำขอคำขอเพิกถอนใบรับรองอิเล็กทรอนิกส์ภายใต้</div>
+                 <div class="row justify-content-center name-document">{{$t('document.RevocationForms')}}</div>
                  <div class="row justify-content-center publised">Publish: 31.08.2018</div></div>
         </div>
     </div>

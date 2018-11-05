@@ -1,17 +1,17 @@
 <template>
 <div class="hero-container">
     <div class="container pt-top">
-        <div class="row justify-content-center"><span class="contact-title">ติดต่อเรา</span></div>
+        <div class="row justify-content-center"><span class="contact-title">{{$t('about.titleAbout')}}</span></div>
         <div class="row">
             <div class="col-md-4">
-                <div class="row info-title">ข้อมูลบริษัท</div>
-                 <div class="row address-title">บริษัท อินเทอร์เน็ตประเทศไทย จำกัด (มหาชน)</div>
-                <div class="row info-title">ที่ตั้งบริษัท</div>
-                <div class="row address-title">หน่วยงานออกใบรับรองอิเล็กทรอนิกส์</div>
-                <div class="row address-title">1768 อาคารไทยซัมมิท ทาวเวอร์ ชั้น 16 ถ.เพชรบุรีตัดใหม่ แขวงบางกะปิ เขตห้วยขวาง กรุงเทพมหานคร 10310</div>
+                <div class="row info-title">{{$t('about.title-company')}}</div>
+                 <div class="row address-title">{{$t('about.name-company')}}</div>
+                <div class="row info-title">{{$t('about.address-company')}}</div>
+                <div class="row address-title">{{$t('about.ca')}}</div>
+                <div class="row address-title">{{$t('about.mess-address-company')}}</div>
                 
-                <div class="row tel-title"><span><img src="~/assets/ICON/telephone.svg" alt=""></span>โทรศัพท์ : 02-257-7269</div>
-                <div class="row email-title"><span><img src="~/assets/ICON/send.svg" alt=""></span>อีเมล์ : ra@inet.co.th</div>
+                <div class="row tel-title"><span><img src="~/assets/ICON/telephone.svg" alt=""></span>{{$t('about.tel')}}: 02-257-7269</div>
+                <div class="row email-title"><span><img src="~/assets/ICON/send.svg" alt=""></span>{{$t('about.email')}}: ra@inet.co.th</div>
 </div>
             <div class="col-md-8 col-xs-12">
               <div class="iframe-container">
