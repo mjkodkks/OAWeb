@@ -44,7 +44,9 @@ export default {
         "PrivacyPolicy": "Statement",
         "title-RequestForm": "Request Forms",
         "RequestForms": "Application for a Certificate of Subordinate CA Registration",
-        "RevocationForms": "Certificate Revocation Request Form"
+        "RevocationForms": "Certificate Revocation Request Form",
+        "preview": "Preview",
+        "download": "Download"
     },
     "about": {
         "titleAbout": "Contact",

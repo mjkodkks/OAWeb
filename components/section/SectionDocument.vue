@@ -9,8 +9,8 @@
                    <div class="text-card">Certificate Policy (CP)</div>
                     <div class="open-document">
                       <div class="btn-warper">
-                      <a class="btn btn-primary btn-preview mt-2" href="doc/Certificate Policy.pdf" target="_blank" style="width:100%;">preview</a>
-                      <a class="btn btn-success btn-download mt-2" href="doc/Certificate Policy.pdf" style="width:100%;" download>download</a>
+                      <a class="btn btn-primary btn-preview mt-2" href="doc/Certificate Policy.pdf" target="_blank" style="width:100%;">{{$t('document.preview')}}</a>
+                      <a class="btn btn-success btn-download mt-2" href="doc/Certificate Policy.pdf" style="width:100%;" download>{{$t('document.download')}}</a>
                     </div>
                     </div>
                  </div>
@@ -21,8 +21,8 @@
               <div class="text-card">Certification Practice Statement (CPS)</div>
                     <div class="open-document">
                       <div class="btn-warper">
-                      <a class="btn btn-primary btn-preview mt-2" href="doc/Certification Practice Statement.pdf" target="_blank" style="width:100%;">preview</a>
-                      <a class="btn btn-success btn-download mt-2" href="doc/Certification Practice Statement.pdf" style="width:100%;" download>download</a>
+                      <a class="btn btn-primary btn-preview mt-2" href="doc/Certification Practice Statement.pdf" target="_blank" style="width:100%;">{{$t('document.preview')}}</a>
+                      <a class="btn btn-success btn-download mt-2" href="doc/Certification Practice Statement.pdf" style="width:100%;" download>{{$t('document.download')}}</a>
                       </div>
                     </div>
                  </div>
@@ -32,8 +32,8 @@
               <div class="text-card">Privacy Policy</div>
                     <div class="open-document">
                       <div class="btn-warper">
-                      <a class="btn btn-primary btn-preview mt-2" href="doc/Data Privacy Policy.pdf" target="_blank" style="width:100%;">preview</a>
-                      <a class="btn btn-success btn-download mt-2" href="doc/Data Privacy Policy.pdf" style="width:100%;" download>download</a>
+                      <a class="btn btn-primary btn-preview mt-2" href="doc/Data Privacy Policy.pdf" target="_blank" style="width:100%;">{{$t('document.preview')}}</a>
+                      <a class="btn btn-success btn-download mt-2" href="doc/Data Privacy Policy.pdf" style="width:100%;" download>{{$t('document.download')}}</a>
                       </div>
                     </div>
                  </div>
@@ -47,8 +47,8 @@
               <div class="text-card">{{$t('document.title-RequestForm')}}</div>
                     <div class="open-document">
                       <div class="btn-warper">
-                        <div class="btn btn-primary btn-preview mt-2" style="width:100%;">preview</div>
-                        <div class="btn btn-success btn-download mt-2" style="width:100%;" >download</div>
+                        <div class="btn btn-primary btn-preview mt-2" style="width:100%;">{{$t('document.preview')}}</div>
+                        <div class="btn btn-success btn-download mt-2" style="width:100%;" >{{$t('document.download')}}</div>
                       </div>
                     </div>
                  </div>
@@ -59,8 +59,8 @@
               <div class="text-card">Revoke</div>
                     <div class="open-document">
                       <div class="btn-warper">
-                        <div class="btn btn-primary btn-preview mt-2" style="width:100%;">preview</div>
-                        <div class="btn btn-success btn-download mt-2" style="width:100%;" >download</div>
+                        <div class="btn btn-primary btn-preview mt-2" style="width:100%;">{{$t('document.preview')}}</div>
+                        <div class="btn btn-success btn-download mt-2" style="width:100%;" >{{$t('document.download')}}</div>
                       </div>
                     </div>
                  </div>
