@@ -41,10 +41,10 @@
                  <div class="row justify-content-center publised">Publish: 2.11.2018</div></div>
         
         </div>
-        <div class="row justify-content-start"><span class="contact-title-sub mt-5">แบบคำขอ</span></div>
+        <div class="row justify-content-start"><span class="contact-title-sub mt-5">{{$t('document.title-RequestForm')}}</span></div>
         <div class="row justify-content-center mb-5">
             <div class="col"><div class="card-document">
-              <div class="text-card">{{$t('document.title-RequestForm')}}</div>
+              <div class="text-card">Request</div>
                     <div class="open-document">
                       <div class="btn-warper">
                         <div class="btn btn-primary btn-preview mt-2" style="width:100%;">{{$t('document.preview')}}</div>

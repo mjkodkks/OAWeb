@@ -71,6 +71,7 @@ export default {
   color: #000;
   padding: 0 12px;
   text-align: justify;
+  margin-bottom: 30px;
 }
 
 .img-why {

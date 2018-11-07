@@ -22,7 +22,7 @@
           <nuxt-link :to="localePath('document')">
             <li>{{ $t('links.document') }}</li>
           </nuxt-link>
-          <nuxt-link to="about">
+          <nuxt-link :to="localePath('about')">
             <li>{{ $t('links.contact') }}</li>
           </nuxt-link>
           <div class="lang-flag-switch">
@@ -31,21 +31,24 @@
         </ul>
         <ul v-else-if="clicked === true && ifmobile" v-scroll="handleScrollMobile" class="super-menu-mobile-scroll">
           <nuxt-link to = "/" class="animated fadeIn" style="display:block">
-            <li>หน้าหลัก</li>
+            <li>{{ $t('links.home') }}</li>
           </nuxt-link>
-          <a class="animated fadeIn" style="display:block" href="#" v-scroll-to="'#section-2'">
-            <li @click="collapseSubmenu">โซลูชั่น</li>
+          <a class="animated fadeIn" style="display:block" >
+            <li @click="collapseSubmenu">{{ $t('links.solution') }}</li>
             <div v-show="clicked_submenu" class="animated fadeIn content-list-mobile" >
-              <a href="">ใบรับรองอิเล็กทรอนิกส์</a>
-              <a href="www.sign.one.th">ลายเซ็นอิเล็กทรอนิกส์</a>
+              <a href="https://ra.oneauthen.in.th" >{{ $t('links.certification') }}</a>
+              <a href="https://sign.one.th/">{{ $t('links.digitalsignature') }}</a>
             </div>
           </a>
-          <nuxt-link to="/document" class="animated fadeIn" style="display:block">
-           <li>เอกสารเผยแพร่</li>
+          <nuxt-link :to="localePath('document')" class="animated fadeIn" style="display:block">
+           <li>{{ $t('links.document') }}</li>
           </nuxt-link>
-          <nuxt-link to="/about" class="animated fadeIn" style="display:block">
-            <li>ติดต่อเรา</li>
+          <nuxt-link :to="localePath('about')" class="animated fadeIn" style="display:block">
+            <li>{{ $t('links.contact') }}</li>
           </nuxt-link>
+          <div class="lang-flag-switch-mobile">
+            <nuxt-link :to="switchLocalePath('th')"><img class="th-switch-mobile" src="../assets/ICON/thailand.svg"></nuxt-link>&nbsp;<nuxt-link :to="switchLocalePath('en')"><img class="th-switch-mobile" src="../assets/ICON/united-kingdom.svg"></nuxt-link>
+          </div>
         </ul>
       </div>
     </div>
@@ -385,8 +388,18 @@ ul {
   display: inherit;
 }
 
+.lang-flag-switch-mobile {
+  display: flex;
+  justify-content: center;
+}
+
 .th-switch {
   width: 25px;
+}
+
+.th-switch-mobile {
+  width: 50px;
+  text-align: center;
 }
 
 @media screen and (max-width: 880px) {

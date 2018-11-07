@@ -1,5 +1,5 @@
 <template>
-<div class="hero-container pt-5">
+<div class="hero-container pt-5 pb-5">
     <div class="container padding-article">
         <div class="row justify-content-center ml-2 mr-2">
             <span class="title-sl">{{ $t('home.title-solution') }}</span>
@@ -11,10 +11,10 @@
                     <span class="title-solution">{{ $t('home.title-caservice') }}</span>
                 </div>
                 <div class="row">
-                    <span class="body-solution">{{ $t('home.mess-caservice') }}</span>
+                    <span class="body-solution-left">{{ $t('home.mess-caservice') }}</span>
                     <ul class="list-sollution">
-                        <li>{{ $t('home.caservice-personal') }}</li>
                         <li>{{ $t('home.caservice-enterprise') }}</li>
+                        <li>{{ $t('home.caservice-personal') }}</li>
                     </ul>
                 </div>
                 <div class="row justify-content-md-start justify-content-center"><a class="btn btn-primary mt-4 btn-home" href="ra.inet.co.th" target="_blank">{{ $t('home.btn-submit-form') }}</a></div>
@@ -25,7 +25,7 @@
                     <span class="title-solution">{{ $t('home.title-digitalsignature') }}</span>
                 </div>
                 <div class="row">
-                    <span class="body-solution">{{ $t('home.mess-digitalsignature') }}</span>
+                    <span class="body-solution-right">{{ $t('home.mess-digitalsignature') }}</span>
                 </div>
                 <div class="row justify-content-md-end justify-content-center"><a class="btn btn-primary mt-4 btn-home" href="http://sign.one.th" target="_blank">{{ $t('home.login-digitalsignature') }}</a></div></div>
             <div class="col-12 col-md-6 order-first order-md-last"><img src="~/assets/ICON/digitalsignature.png" alt="" class="img-thumbnail"></div>
@@ -60,10 +60,16 @@ export default {
   color: #fff;
 }
 
-.body-solution {
+.body-solution-left {
   font-size: 1em;
   color: #fff;
-  text-align: justify;
+  text-align: left;
+}
+
+.body-solution-right {
+  font-size: 1em;
+  color: #fff;
+  text-align: right;
 }
 .btn-home {
   padding: 12px 50px;
