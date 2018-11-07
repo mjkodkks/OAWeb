@@ -24,7 +24,7 @@
                     {{$t('address.email')}} :
                  </b-col>
                  <b-col cols="9" >
-                   info@oneauthen.in.th
+                   ra@inet.co.th
                  </b-col>
                 </b-row>
            </b-col>
