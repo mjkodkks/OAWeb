@@ -403,7 +403,7 @@ ul {
 }
 
 @media screen and (max-width: 880px) {
-  .logo-text[data-v-cfc91daa] {
+  .logo-text {
     font-size: 1.5em;
     color: rgb(0, 0, 0);
     transition: all 0.6s ease-in;

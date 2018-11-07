@@ -25,7 +25,7 @@ export default {
 .hero-container {
   width: 100%;
   background: #fff;
-  min-height: 300px;
+  min-height: 200px;
   display: block;
   position: relative;
   margin-bottom: 1.5rem;
@@ -49,9 +49,9 @@ export default {
 }
 
 .text-content-kl {
-  font-size: 1em;
+  font-size: 1.3em;
   padding: 10px;
-  text-align: justify;
+  text-align: center;
 }
 
 @media screen and (max-width: 450px) {
@@ -62,7 +62,7 @@ export default {
     padding: 0;
   }
   .hero-container {
-    min-height: 600px;
+    min-height: 300px;
   }
 }
 </style>

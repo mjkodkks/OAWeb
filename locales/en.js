@@ -29,7 +29,7 @@ export default {
     },
     "address": {
         "address": "address",
-        "mess-address": "1768 Thai Summit Tower, 10th -12th Floor and IT FloorNew Petchaburi Road, Khwaeng Bang Kapi, Khet Huay Khwang, Bangkok 10310",
+        "mess-address": "1768 Thai Summit Tower, 16th Floor Petchaburi Road, Khwaeng Bang Kapi, Khet Huay Khwang, Bangkok 10310",
         "tel": "tel",
         "email": "email"
     },
@@ -54,7 +54,7 @@ export default {
         "name-company": "Internet Thailand Public Company Limited",
         "address-company": "Location",
         "ca": "INET ONE CA CERTIFICATION AUTHORITY",
-        "mess-address-company": "1768 Thai Summit Tower, 10th -12th Floor and IT FloorNew Petchaburi Road, Khwaeng Bang Kapi, Khet Huay Khwang, Bangkok 10310",
+        "mess-address-company": "1768 Thai Summit Tower, 16th Floor Petchaburi Road, Khwaeng Bang Kapi, Khet Huay Khwang, Bangkok 10310",
         "tel": "Tel",
         "email": "Email"
     }
