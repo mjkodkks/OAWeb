@@ -10,7 +10,7 @@
                 <div class="row address-title">{{$t('about.ca')}}</div>
                 <div class="row address-title">{{$t('about.mess-address-company')}}</div>
                 
-                <div class="row tel-title"><span><img src="~/assets/ICON/telephone.svg" alt=""></span>{{$t('about.tel')}}: 02-257-7269</div>
+                <div class="row tel-title"><span><img src="~/assets/ICON/telephone.svg" alt=""></span>{{$t('about.tel')}}: +66-2257-7000</div>
                 <div class="row email-title"><span><img src="~/assets/ICON/send.svg" alt=""></span>{{$t('about.email')}}: ra@inet.co.th</div>
 </div>
             <div class="col-md-8 col-xs-12">
@@ -51,13 +51,13 @@ export default {
 }
 
 .address-title {
-  font-size: 1.3em;
+  font-size: 1.1em;
   margin-bottom: 20px;
   color: #f0f8ff;
 }
 
 .tel-title {
-  font-size: 1.3em;
+  font-size: 1.1em;
   margin-bottom: 30px;
   color: #f0f8ff;
 }
@@ -68,7 +68,7 @@ export default {
 }
 
 .email-title {
-  font-size: 1.3em;
+  font-size: 1.1em;
   margin-bottom: 30px;
   color: #f0f8ff;
 }

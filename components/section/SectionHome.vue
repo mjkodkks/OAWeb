@@ -6,7 +6,7 @@
                 <div class="title-hero">
                    <div class="home-title"><span>INET</span> ONE CA CERTIFICATION AUTHORITY</div>
                    <div class="sup-home-tilte">ผู้ให้บริการออกใบรับรองอิเล็กทรอนิกส์</div>
-                   <a href="#" class="btn btn-primary mt-4 btn-home">{{ $t('home.btn-submit-form') }}</a>
+                   <a class="btn btn-primary mt-4 btn-home" rel="noreferrer">{{ $t('home.btn-submit-form') }}</a>
                 </div>
               </div>
             </div>
@@ -65,7 +65,7 @@ export default {
   padding: 12px 50px;
   border-radius: 1.5rem;
   background: #fff;
-  color: #007bff;
+  color: #007bff !important;
   border: 0;
   font-size: 1em;
   text-transform: uppercase;

@@ -70,7 +70,8 @@ export default {
   font-size: 1em;
   color: #000;
   padding: 0 12px;
-  text-align: justify;
+  text-align: -webkit-auto;
+  text-align: center;
   margin-bottom: 30px;
 }
 

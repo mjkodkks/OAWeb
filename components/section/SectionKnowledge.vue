@@ -5,7 +5,9 @@
             <span class="title-kl">{{ $t('home.title-introduction') }}</span>
         </div>
         <div class="row justify-content-center ml-2 mr-2">
-            <span class="text-content-kl">{{ $t('home.mess-introduction') }}</span> </div>
+            <span class="text-content-kl">{{ $t('home.mess-introduction') }}</span> 
+            <span class="text-content-kl no-pd">{{ $t('home.mess-introduction-2') }}</span> 
+            </div>
     </div>
     </div>
 </template>
@@ -18,6 +20,13 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.no-pd {
+  padding: 0 !important;
+}
+
+span {
+  white-space: pre;
+}
 .padding-article {
   padding: 0 100px;
 }

@@ -17,7 +17,7 @@
                         <li>{{ $t('home.caservice-personal') }}</li>
                     </ul>
                 </div>
-                <div class="row justify-content-md-start justify-content-center"><a class="btn btn-primary mt-4 btn-home" href="ra.inet.co.th" target="_blank">{{ $t('home.btn-submit-form') }}</a></div>
+                <div class="row justify-content-md-start justify-content-center"><a class="btn btn-primary mt-4 btn-home" rel="noreferrer">{{ $t('home.btn-submit-form') }}</a></div>
             </div>
         </div>
         <div class="row justify-content-center ml-2 mr-2 mt-5 align-items-center">
@@ -27,8 +27,8 @@
                 <div class="row">
                     <span class="body-solution-right">{{ $t('home.mess-digitalsignature') }}</span>
                 </div>
-                <div class="row justify-content-md-end justify-content-center"><a class="btn btn-primary mt-4 btn-home" href="http://sign.one.th" target="_blank">{{ $t('home.login-digitalsignature') }}</a></div></div>
-            <div class="col-12 col-md-6 order-first order-md-last"><img src="~/assets/ICON/digitalsignature.png" alt="" class="img-thumbnail"></div>
+                <div class="row justify-content-md-end justify-content-center"><a class="btn btn-primary mt-4 btn-home" href="https://sign.one.th" rel="noreferrer" target="_blank">{{ $t('home.login-digitalsignature') }}</a></div></div>
+            <div class="col-12 col-md-6 order-first order-md-last"><img src="~/assets/ICON/digitalsignature.png" alt="digitalsignature" class="img-thumbnail"></div>
         </div>
     </div>
     </div>

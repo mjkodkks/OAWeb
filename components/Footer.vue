@@ -8,7 +8,9 @@
                     {{$t('address.address')}} :
                  </b-col>
                  <b-col cols="9" md="10" >
-                     {{$t('address.mess-address')}}
+                     <span>{{$t('address.mess-address')}}</span>
+                     <span>{{$t('address.mess-address-2')}}</span>
+                     <span>{{$t('address.mess-address-3')}}</span>
                  </b-col>
                 </b-row>
                  <b-row> 
@@ -16,7 +18,7 @@
                     {{$t('address.tel')}} :
                  </b-col>
                  <b-col cols="8"  >
-                   02-257-7269
+                   +66-2257-7000
                  </b-col>
                 </b-row>
                  <b-row> 
@@ -41,6 +43,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+span {
+  white-space: pre;
+}
+
 .footer {
   width: 100%;
   background: #2dabfb;

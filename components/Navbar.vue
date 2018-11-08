@@ -15,7 +15,7 @@
           <a href="#" class="sub-menu">
             <li>{{ $t('links.solution') }}<img v-scroll="handleScrolltri" src="~/assets/ICON/bx-play.svg" class="img-sub-menu"></li>
             <div class="animated bounceIn content-list">
-              <a href="https://ra.oneauthen.in.th/" target="_blank">{{ $t('links.certification') }}</a>
+              <a>{{ $t('links.certification') }}</a>
               <a href="https://sign.one.th/" target="_blank">{{ $t('links.digitalsignature') }}</a>
             </div>
           </a>
@@ -36,7 +36,7 @@
           <a class="animated fadeIn" style="display:block" >
             <li @click="collapseSubmenu">{{ $t('links.solution') }}</li>
             <div v-show="clicked_submenu" class="animated fadeIn content-list-mobile" >
-              <a href="https://ra.oneauthen.in.th" >{{ $t('links.certification') }}</a>
+              <a>{{ $t('links.certification') }}</a>
               <a href="https://sign.one.th/">{{ $t('links.digitalsignature') }}</a>
             </div>
           </a>
