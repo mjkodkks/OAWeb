@@ -12,7 +12,7 @@ module.exports = {
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { hid: "description", name: "description", content: pkg.description },
-      { name: "google-site-verification", content: "87jOLnW9zFfdA1dS2HBXsAIRHzhbhW8naicDJVY3Epo" }
+      { name: "google-site-verification", content: "AYCB1smPPbLs5bzV_l0q-ig0wLMhEtQxPT4ZppGdiyo" }
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "favicon.ico" },
     { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Prompt' }]
@@ -63,6 +63,9 @@ module.exports = {
       'bootstrap-vue/nuxt'
     ],
     ['@nuxtjs/component-cache', { maxAge: 1000 * 60 * 60 }],
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-128975082-1',
+    }]
   ],
 
   /*

@@ -24,9 +24,6 @@ export default {
   padding: 0 !important;
 }
 
-span {
-  white-space: pre;
-}
 .padding-article {
   padding: 0 100px;
 }

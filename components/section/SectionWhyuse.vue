@@ -46,7 +46,7 @@ export default {
   width: 100%;
   display: block;
   position: absolute;
-  top: 0;
+  top: -1px;
   left: 0;
   min-height: 300px;
   background: #73c9ff;
