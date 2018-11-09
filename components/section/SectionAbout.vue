@@ -2,8 +2,8 @@
 <div class="hero-container">
     <div class="container pt-top">
         <div class="row justify-content-center"><span class="contact-title">{{$t('about.titleAbout')}}</span></div>
-        <div class="row">
-            <div class="col-md-4">
+        <div class="row no-mg">
+            <div class="col-md-4 col-12">
                 <div class="row info-title">{{$t('about.title-company')}}</div>
                  <div class="row address-title">{{$t('about.name-company')}}</div>
                 <div class="row info-title">{{$t('about.address-company')}}</div>
@@ -35,7 +35,7 @@ export default {
 .hero-container {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(to top, #ffffff, #35b1ff, #008ce8);
+  background: linear-gradient(to top, #adcdef, #35b1ff, #008ce8);
 }
 
 .contact-title {
@@ -80,6 +80,10 @@ export default {
 
 .pt-top {
   padding-top: 10vh;
+}
+
+.no-mg {
+  margin: 0;
 }
 
 .iframe-container {

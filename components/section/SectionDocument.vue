@@ -55,7 +55,7 @@
                  <div class="row name-document justify-content-center">
                         {{$t('document.RequestForms')}}</div>
                  <div class="row justify-content-center publised">Publish: 31.08.2018</div></div>
-            <div class="col"><div class="card-document">
+            <div class="col" style="display:none;"><div class="card-document">
               <div class="text-card">Revoke</div>
                     <div class="open-document">
                       <div class="btn-warper">

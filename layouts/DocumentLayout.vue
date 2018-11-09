@@ -18,6 +18,25 @@ export default {
     Navbar,
     Footer,
     SectionDocument
+  },
+  data() {
+    return {
+      titleEng:
+        "Dissemination Documents | INET ONE AUTHEN | CERTIFICATION AUTHORITY",
+      titleTH: "เอกสารเผยแพร่ | INET ONE AUTHEN | CERTIFICATION AUTHORITY"
+    };
+  },
+  head() {
+    return {
+      title: this.$i18n.locale == "en" ? this.titleEng : this.titleTH,
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: this.$i18n.locale == "en" ? this.titleEng : this.titleTH
+        }
+      ]
+    };
   }
 };
 </script>
