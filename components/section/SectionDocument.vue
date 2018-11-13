@@ -15,7 +15,7 @@
                     </div>
                  </div>
                  <div class="row justify-content-center name-document">{{$t('document.CP')}}</div>
-                 <div class="row justify-content-center publised">Publish: 2.11.2018</div>
+                 <div class="row justify-content-center publised">Publish: 13.11.2018</div>
              </div>
             <div class="col"><div class="card-document">
               <div class="text-card">Certification Practice Statement (CPS)</div>
@@ -27,7 +27,7 @@
                     </div>
                  </div>
                  <div class="row name-document">{{$t('document.CPS')}}</div>
-                 <div class="row justify-content-center publised">Publish: 2.11.2018</div></div>
+                 <div class="row justify-content-center publised">Publish: 13.11.2018</div></div>
             <div class="col"><div class="card-document">
               <div class="text-card">Privacy Policy</div>
                     <div class="open-document">
@@ -38,7 +38,7 @@
                     </div>
                  </div>
                  <div class="row justify-content-center name-document">{{$t('document.PrivacyPolicy')}}</div>
-                 <div class="row justify-content-center publised">Publish: 2.11.2018</div></div>
+                 <div class="row justify-content-center publised">Publish: 13.11.2018</div></div>
         
         </div>
         <div class="row justify-content-start"><span class="contact-title-sub mt-5">{{$t('document.title-RequestForm')}}</span></div>
@@ -54,7 +54,7 @@
                  </div>
                  <div class="row name-document justify-content-center">
                         {{$t('document.EnterpriseCertificate')}}</div>
-                 <div class="row justify-content-center publised">Publish: 31.08.2018</div></div>
+                 <div class="row justify-content-center publised">Publish: 13.11.2018</div></div>
               <div class="col"><div class="card-document">
               <div class="text-card">Personal Certificate</div>
                     <div class="open-document">
@@ -65,7 +65,7 @@
                  </div>
                  <div class="row name-document justify-content-center">
                         {{$t('document.PersonalCertificate')}}</div>
-                 <div class="row justify-content-center publised">Publish: 31.08.2018</div></div>
+                 <div class="row justify-content-center publised">Publish: 13.11.2018</div></div>
               <div class="col"><div class="card-document">
               <div class="text-card">Revoke for Enterprise</div>
                     <div class="open-document">
@@ -77,7 +77,7 @@
                  </div>
                  <div class="row name-document justify-content-center">
                         {{$t('document.RevocationFormsEnterprise')}}</div>
-                 <div class="row justify-content-center publised">Publish: 31.08.2018</div></div>
+                 <div class="row justify-content-center publised">Publish: 13.11.2018</div></div>
             <div class="col"><div class="card-document">
               <div class="text-card">Revoke for Personal</div>
                     <div class="open-document">
@@ -88,7 +88,7 @@
                     </div>
                  </div>
                  <div class="row justify-content-center name-document">{{$t('document.RevocationFormsPersonal')}}</div>
-                 <div class="row justify-content-center publised">Publish: 31.08.2018</div></div>
+                 <div class="row justify-content-center publised">Publish: 13.11.2018</div></div>
         </div>
     </div>
     </div>
@@ -150,6 +150,8 @@ export default {
 .card-document:hover .open-document {
   visibility: visible;
   height: 100%;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
 
@@ -165,6 +167,8 @@ export default {
   padding: 3%;
   color: #ffff;
   overflow: hidden;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   text-transform: uppercase;
 }
