@@ -44,27 +44,50 @@
         <div class="row justify-content-start"><span class="contact-title-sub mt-5">{{$t('document.title-RequestForm')}}</span></div>
         <div class="row justify-content-center mb-5">
             <div class="col"><div class="card-document">
-              <div class="text-card">Request</div>
+              <div class="text-card">Enterprise Certificate</div>
                     <div class="open-document">
                       <div class="btn-warper">
-                        <div class="btn btn-primary btn-preview mt-2" style="width:100%;">{{$t('document.preview')}}</div>
-                        <div class="btn btn-success btn-download mt-2" style="width:100%;" >{{$t('document.download')}}</div>
+                        <a class="btn btn-primary btn-preview mt-2"  href="doc/Application_form_Enterprise.pdf" target="_blank" style="width:100%;">{{$t('document.preview')}}</a>
+                        <a class="btn btn-success btn-download mt-2"  href="doc/Application_form_Enterprise.pdf" download style="width:100%;">{{$t('document.download')}}</a>
                       </div>
                     </div>
                  </div>
                  <div class="row name-document justify-content-center">
-                        {{$t('document.RequestForms')}}</div>
+                        {{$t('document.EnterpriseCertificate')}}</div>
                  <div class="row justify-content-center publised">Publish: 31.08.2018</div></div>
-            <div class="col" style="display:none;"><div class="card-document">
-              <div class="text-card">Revoke</div>
+              <div class="col"><div class="card-document">
+              <div class="text-card">Personal Certificate</div>
                     <div class="open-document">
                       <div class="btn-warper">
-                        <div class="btn btn-primary btn-preview mt-2" style="width:100%;">{{$t('document.preview')}}</div>
-                        <div class="btn btn-success btn-download mt-2" style="width:100%;" >{{$t('document.download')}}</div>
+                        <a class="btn btn-primary btn-preview mt-2"  href="doc/Application_form_Personal.pdf" target="_blank" style="width:100%;">{{$t('document.preview')}}</a>
+                        <a class="btn btn-success btn-download mt-2"  href="doc/Application_form_Personal.pdf" style="width:100%;" download>{{$t('document.download')}}</a>                      </div>
+                    </div>
+                 </div>
+                 <div class="row name-document justify-content-center">
+                        {{$t('document.PersonalCertificate')}}</div>
+                 <div class="row justify-content-center publised">Publish: 31.08.2018</div></div>
+              <div class="col"><div class="card-document">
+              <div class="text-card">Revoke for Enterprise</div>
+                    <div class="open-document">
+                      <div class="btn-warper">
+                        <a class="btn btn-primary btn-preview mt-2" href="doc/Revoke_form_Enterprise.pdf" target="_blank" style="width:100%;">{{$t('document.preview')}}</a>
+                        <a class="btn btn-success btn-download mt-2" href="doc/Revoke_form_Enterprise.pdf" download style="width:100%;">{{$t('document.download')}}</a>
                       </div>
                     </div>
                  </div>
-                 <div class="row justify-content-center name-document">{{$t('document.RevocationForms')}}</div>
+                 <div class="row name-document justify-content-center">
+                        {{$t('document.RevocationFormsEnterprise')}}</div>
+                 <div class="row justify-content-center publised">Publish: 31.08.2018</div></div>
+            <div class="col"><div class="card-document">
+              <div class="text-card">Revoke for Personal</div>
+                    <div class="open-document">
+                      <div class="btn-warper">
+                         <a class="btn btn-primary btn-preview mt-2" href="doc/Revoke_form_Personal.pdf" target="_blank" style="width:100%;">{{$t('document.preview')}}</a>
+                        <a class="btn btn-success btn-download mt-2" href="doc/Revoke_form_Personal.pdf" download style="width:100%;">{{$t('document.download')}}</a>
+                      </div>
+                    </div>
+                 </div>
+                 <div class="row justify-content-center name-document">{{$t('document.RevocationFormsPersonal')}}</div>
                  <div class="row justify-content-center publised">Publish: 31.08.2018</div></div>
         </div>
     </div>

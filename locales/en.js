@@ -46,8 +46,11 @@ export default {
         "CPS": "One CA Certification Practice Statement",
         "PrivacyPolicy": "Statement",
         "title-RequestForm": "Request Forms",
-        "RequestForms": "Application for a Certificate of Subordinate CA Registration",
-        "RevocationForms": "Certificate Revocation Request Form",
+        "ApplicationForms": "Application for a Certificate",
+        "EnterpriseCertificate": "Application for Enterprise Certificate",
+        "PersonalCertificate": "Application for Personal Certificate",
+        "RevocationFormsEnterprise": "The Certificate Revocation Request Form for Enterprise",
+        "RevocationFormsPersonal": "The Certificate Revocation Request Form for Personal",
         "preview": "Preview",
         "download": "Download"
     },
