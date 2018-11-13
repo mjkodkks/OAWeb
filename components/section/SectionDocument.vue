@@ -150,9 +150,9 @@ export default {
 .card-document:hover .open-document {
   visibility: visible;
   height: 100%;
+   transition: all 0.2s ease-in;
   -webkit-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
 }
 
 .open-document {
@@ -167,9 +167,9 @@ export default {
   padding: 3%;
   color: #ffff;
   overflow: hidden;
+  transition: all 0.2s ease-in;
   -webkit-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
   text-transform: uppercase;
 }
 

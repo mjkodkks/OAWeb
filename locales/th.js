@@ -52,7 +52,7 @@ export default {
         "RevocationFormsEnterprise": "แบบคำขอเพิกถอนใบรับรองอิเล็กทรอนิกส์สำหรับนิติบุคคล",
         "RevocationFormsPersonal": "แบบคำขอเพิกถอนใบรับรองอิเล็กทรอนิกส์สำหรับบุคคล",
         "preview": "ตัวอย่าง",
-        "download": "ดาว์นโหลด"
+        "download": "ดาวน์โหลด"
     },
     "about": {
         "titleAbout": "ติดต่อเรา",
