@@ -63,5 +63,11 @@ export default {
         "mess-address-company": "1768 Thai Summit Tower, 16th Floor Petchaburi Road, Khwaeng Bang Kapi, Khet Huay Khwang, Bangkok 10310",
         "tel": "Tel",
         "email": "Email"
-    }
+    },
+    "application" : {
+        "title":"Application",
+        "type":"Type of Application",
+        "personal": "Personal",
+        "enterprise": "Enterprise"
+    },
 }
